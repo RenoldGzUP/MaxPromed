@@ -1,0 +1,67 @@
+# Query:     <script src="js/jquery-3.3.1.min.js"></script>
+# Flags: IgnoreExcludeSettings
+
+21 results - 21 files
+
+about.html:
+  620:     <script src="js/jquery-3.5.1.min.js"></script>
+
+appointment.html:
+  510:     <script src="js/jquery-3.5.1.min.js"></script>
+
+blog-details.html:
+  579:     <script src="js/jquery-3.5.1.min.js"></script>
+
+blog-grid-2.html:
+  500:     <script src="js/jquery-3.5.1.min.js"></script>
+
+blog-grid.html:
+  407:     <script src="js/jquery-3.5.1.min.js"></script>
+
+blog-list.html:
+  458:     <script src="js/jquery-3.5.1.min.js"></script>
+
+blog-standared.html:
+  458:     <script src="js/jquery-3.5.1.min.js"></script>
+
+contact-us-2.html:
+  367:     <script src="js/jquery-3.5.1.min.js"></script>
+
+contact-us.html:
+  367:     <script src="js/jquery-3.5.1.min.js"></script>
+
+doctors-2.html:
+  483:     <script src="js/jquery-3.5.1.min.js"></script>
+
+doctors-3.html:
+  379:     <script src="js/jquery-3.5.1.min.js"></script>
+
+doctors.html:
+  502:     <script src="js/jquery-3.5.1.min.js"></script>
+
+error.html:
+  38:     <script src="js/jquery-3.5.1.min.js"></script>
+
+index-2.html:
+  869:     <script src="js/jquery-3.5.1.min.js"></script>
+
+index-3.html:
+  910:     <script src="js/jquery-3.5.1.min.js"></script>
+
+index.html:
+  1046:     <script src="js/jquery-3.5.1.min.js"></script>
+
+pricing.html:
+  483:     <script src="js/jquery-3.5.1.min.js"></script>
+
+services-2.html:
+  644:     <script src="js/jquery-3.5.1.min.js"></script>
+
+services-3.html:
+  682:     <script src="js/jquery-3.5.1.min.js"></script>
+
+services-detail.html:
+  571:     <script src="js/jquery-3.5.1.min.js"></script>
+
+services.html:
+  644:     <script src="js/jquery-3.5.1.min.js"></script>
