@@ -49,10 +49,6 @@
                                             <h4>+123 456 7890</h4>
                                         </div>
                                     </li>
-                                    <li class="appointment-btn">
-                                        <a href="appointment.html" class="btn btn-primary">Make Appointment</a>
-                                        <i class="fas fa-search"></i>
-                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -167,12 +163,7 @@
                                 <li class="nav-item">
                                     <a class="nav-link" href="#"><i class="fab fa-instagram"></i></a>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#"><i class="fab fa-google-plus-g"></i></a>
-                                </li>
-                                <li class="nav-item cart-seperate">
-                                    <a class="nav-link" href="#"><i class="fas fa-shopping-cart fa-top-search"></i> <span>2</span></a>
-                                </li>
+                                               
                                 <li class="nav-item">
                                     <a class="nav-link" href="#"><i class="fas fa-bars"></i></a>
                                 </li>
@@ -190,9 +181,10 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="sub-header_content">
-                        <p>ABOUT US</p>
-                        <h3>Lorem ipsum dolor sit ametco nse<br> ctetur adipisicing elitsed.</h3>
-                        <span><i>Home / About Us</i></span>
+                    
+                        <h3>Fast and easy!</h3>
+                        <h2>Schedule your appointment in just three minutes!</h2>
+                       
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -209,36 +201,141 @@
     <section class="space">
         <div class="container container-custom">
             <div class="row">
-                <div class="col-md-6">
-                    <div class="news-img-block">
-                        <img src="images/play-img.png" class="img-fluid" alt="#" />
-                        <a class="video-play-button popup-youtube" href="https://www.youtube.com/watch?v=pBFQdxA-apI">
-                            <span></span>
-                        </a>
-                        <div id="video-overlay" class="video-overlay">
-                            <a class="video-overlay-close">&times;</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="video-play-text">
-                        <span>Who we are -----</span>
-                        <h2>We Have Advanced Technologies</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eius mod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
-                        </p>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eius mod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
-                        </p>
-                        <hr />
-                        <div class="newsletter-subscribe">
-                            <h4>Subscribe to our Newsletter</h4>
-                            <div class="newsletter-subscribe_form">
-                                <input type="text" class="form-control" placeholder="Enter Your Email" />
-                                <a href="#"><i class="fas fa-chevron-right"></i></a>
+
+                <div class="col-md-6 col-md-12">
+                    <div class="">
+                        <form>
+
+                            <div class="form-row">
+                                <div class="col-md-12"> 
+                                    <h5>Personal Information</h5>
+                                    <br>
+                                </div>
+                              <div class="form-group col-md-6">
+                            
+                                <input type="text" class="form-control" id="inputEmail4" placeholder="Name" >
+                                
+                              </div>
+                              <div class="form-group col-md-6">
+                              
+                                <input type="text" class="form-control" id="inputPassword4" placeholder="LastName">
+                              </div>
                             </div>
-                        </div>
+                            <br>
+
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                              
+                                  <input type="text" class="form-control" id="inputEmail4" placeholder="Email">
+                                </div>
+                                <div class="form-group col-md-6">
+                                  
+                                  <input type="text" class="form-control" id="inputPassword4" placeholder="Phone Number">
+                                </div>
+                            </div> <br>
+
+                            <div class="form-row">
+                                <div class="form-group col-md-6">                           
+                                  <input type="text" class="form-control" id="inputEmail4" placeholder="Age">
+                                </div>
+                                <div class="form-group col-md-6">
+                                  <input type="date" class="form-control" id="inputPassword4" placeholder="Date">
+                                </div>
+                            </div>
+                            <br>
+
+                            <div class="form-row">
+                                <div class="col-md-12"> 
+                                    <h5>Schedule</h5>
+                                    <br>
+                                </div>
+
+                                <div class="form-group col-md-6">
+                                    <label for="inputState">Test Type</label>
+                                    <select id="inputState" class="form-control">
+                                      <option selected>Choose...</option>
+                                      <option>Antigest 29.95 </option>
+                                      <option>Antibodytest 29.95...</option>
+                                      <option>PCR Saliva Test 59.95</option>
+                                      <option>PCR throat/nose swab 59,95</option>
+                                      <option>PCR Emergencry test 129.95</option>
+
+                                    </select>
+                                </div>
+
+                                <div class="form-group col-md-6">
+                                    <label for="inputState">Location</label>
+                                    <select id="inputState" class="form-control">
+                                      <option selected>Choose...</option>
+                                      <option>...</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="inputState">Date</label>
+                                    <input type="date" class="form-control" id="inputPassword4" placeholder="Date">
+                                  </div>
+
+                                  <div class="form-group col-md-6">
+                                    <label for="inputState">Choose an Hour</label>   
+                                 
+                                    <select id="inputState" class="form-control">
+                                      <option selected>Choose...</option>
+                                      <option>7:00</option>
+                                      <option>8:00</option>
+                                      <option>9:00</option>
+                                      <option>10:00</option>
+                                      <option>11:00</option>
+                                      <option>12:00</option>
+                                      <option>13:00</option>
+                                      <option>16:00</option>
+                                      <option>17:00</option>
+                                      <option>18:00</option>
+                                      <option>19:00</option>                             
+                                    </select>                            
+                                  </div>
+
+
+                            </div>
+
+                            <div class="form-row">
+
+                                <div class="col-md-12"> 
+                                    <h5>Available timeslots for : <span>Date</span></h5> 
+                                    <span class="badge badge-success">Free</span>
+                                    <span class="badge badge-secondary">Not Available</span>
+                                    <br><br><br>
+                                </div>
+
+                                  <div class="form-group col-md-2 col-md-1 col-sm-2">
+                                    <button type="button" class="btn btn-success">:00</button>
+                                  </div>
+                                  <div class="form-group col-md-2 col-md-1 col-sm-2">
+                                    <button type="button" class="btn btn-success">:10</button>
+                                  </div>
+                                  <div class="form-group col-md-2 col-md-1 col-sm-2">
+                                    <button type="button" class="btn btn-success">:20</button>
+                                  </div>
+                                  <div class="form-group col-md-2 col-md-1 col-sm-2">
+                                    <button type="button" class="btn btn-success">:30</button>
+                                  </div>
+                                  <div class="form-group col-md-2 col-md-1 col-sm-2">
+                                    <button type="button" class="btn btn-success">:40</button>
+                                  </div>
+                                  <div class="form-group col-md-2 col-md-1 col-sm-2">
+                                    <button type="button" class="btn btn-success">:50</button>
+                                  </div>
+
+                            </div>
+
+
+<br>
+                            <button type="submit" class="btn btn-primary">Book Now</button>
+                          </form>
                     </div>
+
                 </div>
             </div>
         </div>
@@ -264,8 +361,8 @@
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group form-group-cutom">
-                                        <input type="number" class="form-control form-custom" placeholder="Date and time">
-                                        <i class="far fa-clock"></i>
+                                        <input type="date" class="form-control form-custom" placeholder="Date" required>
+                                        <i class="far fa-calendar"></i>
                                     </div>
                                 </div>
                             </div>
