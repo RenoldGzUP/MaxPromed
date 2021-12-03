@@ -4192,3 +4192,14 @@ SERVICE DETAIL
   font-size: 13px;
   margin: 0;
 }
+
+
+
+/*******************Css Personalizado*******************/
+
+
+/*** Ajuste de logo del menu***/
+.menu-logo{
+  width: 100px !important;
+  height: auto !important;
+}
