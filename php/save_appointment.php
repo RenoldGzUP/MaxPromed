@@ -27,7 +27,7 @@ var_dump($stringCode);
 
 
 //Save Data in DB
-$request = newAppointment($stringCode,$Name, $LastName,$Email, $Phone,$Birthdate,$Residence,$TestType,$TestLocation,$TestDate,$TestHourWhole);
+$request = newAppointment($stringCode,$Name, $LastName,$Email, $Phone,$Residence,$Birthdate,$TestType,$TestLocation,$TestDate,$TestHourWhole);
 
 
 if($request){   
