@@ -2122,6 +2122,65 @@ a:focus {
   color: #38a7de;
 }
 
+.testimonial-wrap3 {
+  position: relative;
+  /*border: 1px solid #38a7de !important;*/
+  padding: 15px;
+ 
+  height: 500px;
+  background-color: #fff !important;
+}
+.testimonial-wrap3 ul {
+  padding: 0;
+  margin: 0;
+}
+.testimonial-wrap3 ul li {
+  list-style: none;
+  display: inline-block;
+}
+.testimonial-wrap3 ul li i {
+  color: #f9c863;
+  font-size: 14px;
+  margin: 0 0 14px;
+}
+.testimonial-wrap3 p {
+ 
+ 
+  font-size: 17px;
+}
+.testimonial-wrap3 p span {
+  color: #38a7de;
+}
+
+
+.testimonial-wrap4 {
+  position: relative;
+  border: 1px solid #38a7de !important;
+  padding:20px;
+  height: 450px !important;
+}
+.testimonial-wrap4 ul {
+  padding: 0;
+  margin: 0;
+}
+.testimonial-wrap4 ul li {
+  list-style: none;
+  display: inline-block;
+}
+.testimonial-wrap4 ul li i {
+  color: #f9c863;
+  font-size: 14px;
+  margin: 0 0 14px;
+}
+.testimonial-wrap4 p {
+ 
+ 
+  font-size: 17px;
+}
+.testimonial-wrap4 p span {
+  color: #38a7de;
+}
+
 .testi-img-icon {
   width: 80px;
   height: 80px;
@@ -4318,6 +4377,13 @@ a {
 }
 
 
+.sombra-style{
+  box-shadow: 0px 0px 30px #a5a5a5;
+}
+
+.slow-effect{
+  transition: 0.5s;
+}
 
 /*** Ajuste de logo del menu***/
 .menu-logo{
@@ -4352,6 +4418,11 @@ a.btn.btn-dark  {
 }
 
 /***Colores sitio web**/
+
+
+.css-bg-blanco{
+  background-color: #fff;
+}
 
 .css-color-1{
 
@@ -4453,6 +4524,74 @@ background: #38a7de !important;
 .css-color-blanco{
   color: #fff !important ;
 }
+
+
+/*******boton flotante******/
+
+.social-1 {
+  position: fixed;
+  left: 5px;
+  top: 90%;
+  z-index: 2000;
+ 
+}
+.hover-style:hover{
+  background: #061550 !important;
+  color: #fff; 
+  transition: 0.5s;
+  
+  box-shadow: 0px 5px 9px #b1b1b1;
+
+}
+.social-1 ul {
+  list-style: none;
+  padding: 0;
+}
+
+.social-2 ul {
+  list-style: none;
+  padding: 0;
+}
+
+.social-2 ul {
+  list-style: none;
+  padding: 0;
+}
+
+.social-2 {
+  position: fixed;
+  right: 5px;
+  top: 90%;
+  z-index: 2000;
+ 
+}
+ 
+ 
+
+.social-3 ul {
+  list-style: none;
+  padding: 0;
+}
+
+.social-3 ul {
+  list-style: none;
+  padding: 0;
+}
+
+.social-3 {
+  position: fixed;
+  right: 5px;
+  top: 83%;
+  z-index: 2000;
+ 
+}
+ 
+ 
+
+.social-2 ul {
+  list-style: none;
+  padding: 0;
+}
 /***************************fuente************************/
 
 .fw-400{
@@ -4520,7 +4659,10 @@ background: #38a7de !important;
 .pb1{
   padding-bottom: 1em !important;
 }
+.p3{
+  padding: 3em !important;
 
+}
 .pt0{
   padding-top: 0em !important;
 }
@@ -4567,10 +4709,7 @@ background: #38a7de !important;
 
 }
 
-.p3{
-  padding: 3em;
 
-}
 
 .p4{
   padding: 4em;
@@ -4636,4 +4775,94 @@ background: #38a7de !important;
 
 .card-body {
   background: transparent !important;
+
+
+
+
 }
+
+
+
+
+/***********************medias responsive*************************/
+@media   (max-width: 768px) {
+  .visible-xs{
+    display: block !important;
+  }
+
+  .hidden-xs{
+    display: none !important;
+  }
+
+  .mt2-xs{
+    margin-top: 2em;
+  }
+
+  .p1-xs{
+    padding: 1em !important;
+  }
+
+  .pt0-xs {
+padding-top: 0em;
+  }
+
+  .pb0-xs{
+    padding-bottom: 0em;
+
+
+  }
+
+  .menu-logo{
+
+    width:  70px !important;
+    height: auto !important;
+    
+  }
+  button.navbar-toggler.nav-custome1{
+    margin-right: 15px !important;
+    margin-top: 15px !important;
+    padding: 6px;
+    background: #fefdfd;
+    transition: 0.5s;
+
+  }
+  .fixed-top button.navbar-toggler.nav-custome1 {
+    margin-top: 29px !important;
+    margin-right: 15px !important;
+    padding: 6px;
+   /* background: #02a9e1;*/
+    transition: 0.5s;
+}
+
+  /*****servicios principales*****/
+
+
+.slick-slide img{
+  display: initial !important;
+}
+
+
+
+  }
+
+  
+
+  @media   (min-width: 769px) and (max-width: 991px) {
+    .visible-xs{
+      display: none !important;
+    }
+  }
+
+  @media (min-width: 992px) and (max-width: 1200px) {
+    .visible-xs{
+      display: none !important;
+    }
+  }
+
+  @media (min-width: 1201px)   {
+    .visible-xs{
+      display: none !important;
+    }
+ 
+  }
+ 

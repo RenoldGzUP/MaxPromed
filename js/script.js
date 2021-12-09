@@ -501,3 +501,22 @@ form &&
         }, 5000);
       });
   });
+
+/* ================================================
+      Fixed menu
+      ================================================ */
+
+
+  jQuery(document).ready(function( $ ) {
+    $(window).scroll(function(){
+      var scroll = jQuery(window).scrollTop();
+      if (scroll >= 200) {
+        $("#fixedmenu").addClass("fixed-top  p3 p1-xs pt0 pb0 css-bg-blanco sombra-style slow-effect");
+      }
+  
+      else{
+      $("#fixedmenu").removeClass("fixed-top p3 p1-xs pt0-xs pb0-xs pt0 pb0  css-bg-blanco sombra-style");  	
+      }
+    });
+  });
+  
