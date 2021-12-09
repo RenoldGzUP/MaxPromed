@@ -61,11 +61,11 @@ class Query
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////
 
-function newAppointment($AP_REGISTER,$NAME,$LASTNAME,$EMAIL,$PHONE,$RESIDENCE,$BIRTHDATE,$TEST_TYPE,$TEST_LOCATION,$TEST_DATE,$TEST_HOUR){
+function newAppointment($AP_REGISTER,$NAME,$LASTNAME,$GENDER,$BIRTHDATE,$EMAIL,$PHONE,$STREET1,$STREET2,$PLACE,$PROVINCE,$POSTCODE,$COUNTRY,$ID_METHOD,$BSN,$DOC_NUMBER,$CARDINALITY,$TEST_TYPE,$TEST_LOCATION,$TEST_DATE,$TEST_HOUR,$TEST_HOUR_SPE,$CONSENT){
 
     global $mysqli;
-    $query      = new Query($mysqli, "INSERT into appointment(ap_meet_register,ap_name,ap_lastname,ap_email,ap_cellphone,ap_residence,ap_birthdate,ap_test_type,ap_test_location,ap_test_date,ap_test_hour) VALUES (?,?,?,?,?,?,?,?,?,?,?)");
-    $parametros = array('sssssssssss', &$AP_REGISTER,&$NAME,&$LASTNAME,&$EMAIL,&$PHONE,&$RESIDENCE,&$BIRTHDATE,&$TEST_TYPE,&$TEST_LOCATION,&$TEST_DATE,&$TEST_HOUR);
+    $query      = new Query($mysqli, "INSERT into appointment(ap_meet_register,ap_name,ap_lastname,ap_gender,ap_birthdate,ap_email,ap_cellphone,ap_street_name ,ap_second_addres ,ap_place,ap_province,ap_postcode ,ap_country ,ap_id_method ,ap_bsn_number ,ap_doc_number,ap_cardinality ,ap_test_type,ap_test_location,ap_test_date,ap_test_hour,ap_test_hour_specific,ap_consent) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
+    $parametros = array('sssssssssssssssssssssss', &$AP_REGISTER,&$NAME,&$LASTNAME,&$GENDER,&$BIRTHDATE,&$EMAIL,&$PHONE,&$STREET1,&$STREET2,&$PLACE,&$PROVINCE,&$POSTCODE,&$COUNTRY,&$ID_METHOD,&$BSN,&$DOC_NUMBER,&$CARDINALITY,&$TEST_TYPE,&$TEST_LOCATION,&$TEST_DATE,&$TEST_HOUR,&$TEST_HOUR_SPE,&$CONSENT);
     $data       = $query->getresults($parametros);
     return true;
 
