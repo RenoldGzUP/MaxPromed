@@ -26,6 +26,7 @@ URL: https://themeforest.net/user/surjithctly/
 
 .navbar {
   padding: 0;
+  text-transform: uppercase !important;
 }
 @media (min-width: 992px) {
   .navbar {
@@ -472,8 +473,8 @@ h3, .h3 {
 }
 
 h4, .h4 {
-  font-size: 19px;
-  font-weight: 700;
+  font-size: 19px  ;
+ 
 }
 
 p {
@@ -518,6 +519,11 @@ a:focus {
 /* --------- Header --------- */
 .banner--wrap {
   background: url(../images/banner-bg.jpg) center no-repeat;
+  background-size: cover;
+}
+
+.banner--wrap2 {
+  background: linear-gradient(#ffffff,#ffffffad, #ffffff7a, #ffffffdb), url(../images/home-pic-1.jpg) center no-repeat;
   background-size: cover;
 }
 
@@ -928,7 +934,7 @@ a:focus {
 }
 .main-slider .slick-slide img {
   width: 100% !important;
-  height: 600px;
+  height: auto;
 }
 
 .slider-img-text {
@@ -1329,6 +1335,23 @@ a:focus {
   border-radius: 8px;
   font-size: 13px;
 }
+
+.about-form2 {
+  background: url(../images/bg-home-form.jpg) no-repeat;
+  background-size: cover;
+}
+.about-form2 p {
+   
+  font-size: 14px;
+}
+.about-form2 .dental-features_list i {
+  background: #38a7de;
+}
+.about-form2 a {
+  border-radius: 8px;
+  font-size: 13px;
+}
+
 
 .booking-form-style2 {
   position: relative;
@@ -2007,7 +2030,7 @@ a:focus {
 
 /* --------- Testimonials --------- */
 .testimonial {
-  padding: 90px 0;
+  padding: 30px 0;
 }
 
 .testi-slider .slick-track {
@@ -2042,7 +2065,7 @@ a:focus {
 
 .testimonial-wrap {
   position: relative;
-  border: 12px solid #38a7de !important;
+  border: 1px solid #38a7de !important;
   padding: 35px;
 }
 .testimonial-wrap ul {
@@ -2064,6 +2087,97 @@ a:focus {
   font-size: 17px;
 }
 .testimonial-wrap p span {
+  color: #38a7de;
+}
+
+
+
+.testimonial-wrap2 {
+  position: relative;
+  /*border: 1px solid #38a7de !important;*/
+  padding: 15px;
+  box-shadow: 0px 0px 34px rgb(221 221 221);
+  height: 500px;
+  background-color: #fff !important;
+}
+.testimonial-wrap2 ul {
+  padding: 0;
+  margin: 0;
+}
+.testimonial-wrap2 ul li {
+  list-style: none;
+  display: inline-block;
+}
+.testimonial-wrap2 ul li i {
+  color: #f9c863;
+  font-size: 14px;
+  margin: 0 0 14px;
+}
+.testimonial-wrap2 p {
+ 
+ 
+  font-size: 17px;
+}
+.testimonial-wrap2 p span {
+  color: #38a7de;
+}
+
+.testimonial-wrap3 {
+  position: relative;
+  /*border: 1px solid #38a7de !important;*/
+  padding: 15px;
+ 
+  height: 500px;
+  background-color: #fff !important;
+}
+.testimonial-wrap3 ul {
+  padding: 0;
+  margin: 0;
+}
+.testimonial-wrap3 ul li {
+  list-style: none;
+  display: inline-block;
+}
+.testimonial-wrap3 ul li i {
+  color: #f9c863;
+  font-size: 14px;
+  margin: 0 0 14px;
+}
+.testimonial-wrap3 p {
+ 
+ 
+  font-size: 17px;
+}
+.testimonial-wrap3 p span {
+  color: #38a7de;
+}
+
+
+.testimonial-wrap4 {
+  position: relative;
+  border: 1px solid #38a7de !important;
+  padding:20px;
+  height: 450px !important;
+}
+.testimonial-wrap4 ul {
+  padding: 0;
+  margin: 0;
+}
+.testimonial-wrap4 ul li {
+  list-style: none;
+  display: inline-block;
+}
+.testimonial-wrap4 ul li i {
+  color: #f9c863;
+  font-size: 14px;
+  margin: 0 0 14px;
+}
+.testimonial-wrap4 p {
+ 
+ 
+  font-size: 17px;
+}
+.testimonial-wrap4 p span {
   color: #38a7de;
 }
 
@@ -2530,14 +2644,14 @@ ABOUT
 }
 @media (min-width: 768px) {
   .sub-header_main h2 {
-    font-size: 60px;
+    font-size: 48px;
     margin: 0;
     text-align: center;
   }
 }
 @media (min-width: 1200px) {
   .sub-header_main h2 {
-    font-size: 86px;
+    font-size: 64px;
     font-weight: 600;
     margin: 18px 0 0;
   }
@@ -3396,11 +3510,12 @@ CONTACT US
 }
 .contact-title_icon p {
   margin: 0;
-  font-size: 12px;
+  font-size: 20px;
+  font-weight: 600;
 }
 .contact-title_icon h6 {
   line-height: 1.8;
-  font-size: 14px;
+  font-size: 18px;
 }
 
 .get-in-touch {
@@ -4256,6 +4371,20 @@ a {
 }
 
 
+.redondo-nl, img.redondo-nl {
+ 
+  border-radius: 25px !important;
+}
+
+
+.sombra-style{
+  box-shadow: 0px 0px 30px #a5a5a5;
+}
+
+.slow-effect{
+  transition: 0.5s;
+}
+
 /*** Ajuste de logo del menu***/
 .menu-logo{
 
@@ -4289,6 +4418,11 @@ a.btn.btn-dark  {
 }
 
 /***Colores sitio web**/
+
+
+.css-bg-blanco{
+  background-color: #fff;
+}
 
 .css-color-1{
 
@@ -4385,11 +4519,97 @@ background: #38a7de !important;
   background: #01030a !important;
 
 }
+
+
+.css-color-blanco{
+  color: #fff !important ;
+}
+
+
+/*******boton flotante******/
+
+.social-1 {
+  position: fixed;
+  left: 5px;
+  top: 90%;
+  z-index: 2000;
+ 
+}
+.hover-style:hover{
+  background: #061550 !important;
+  color: #fff; 
+  transition: 0.5s;
+  
+  box-shadow: 0px 5px 9px #b1b1b1;
+
+}
+.social-1 ul {
+  list-style: none;
+  padding: 0;
+}
+
+.social-2 ul {
+  list-style: none;
+  padding: 0;
+}
+
+.social-2 ul {
+  list-style: none;
+  padding: 0;
+}
+
+.social-2 {
+  position: fixed;
+  right: 5px;
+  top: 90%;
+  z-index: 2000;
+ 
+}
+ 
+ 
+
+.social-3 ul {
+  list-style: none;
+  padding: 0;
+}
+
+.social-3 ul {
+  list-style: none;
+  padding: 0;
+}
+
+.social-3 {
+  position: fixed;
+  right: 5px;
+  top: 83%;
+  z-index: 2000;
+ 
+}
+ 
+ 
+
+.social-2 ul {
+  list-style: none;
+  padding: 0;
+}
 /***************************fuente************************/
 
 .fw-400{
   font-weight: 400 !important;
 }
+
+.fw-800{
+  font-weight: 800 !important;
+}
+
+.fw-600{
+  font-weight: 600 !important;
+}
+
+.fw-300{
+  font-weight: 300 !important;
+}
+
 
 .h3{
   font-size: 20px !important;
@@ -4434,40 +4654,74 @@ background: #38a7de !important;
 }
 
 .pt1{
-  padding-top: 1em;
+  padding-top: 1em !important;
 }
 .pb1{
-  padding-bottom: 1em;
+  padding-bottom: 1em !important;
+}
+.p3{
+  padding: 3em !important;
+
+}
+.pt0{
+  padding-top: 0em !important;
+}
+.pb0{
+  padding-bottom: 0em !important;
 }
 
 .pt2{
-  padding-top: 2em;
+  padding-top: 2em !important;
 }
 
 .pb2{
-  padding-bottom: 2em;
+  padding-bottom: 2em !important;
 }
 
 .pt3{
-  padding-top: 3em;
+  padding-top: 3em !important;
 }
 .pb3{
-  padding-bottom: 3em;
+  padding-bottom: 3em !important;
 }
 
 .pt4{
-  padding-top: 4em;
+  padding-top: 4em !important;
 }
 
 .pb4{
-  padding-bottom: 4em;
+  padding-bottom: 4em !important;
 }
 .pt5{
-  padding-top: 5em;
+  padding-top: 5em !important;
 }
 .pb5{
-  padding-bottom: 5em;
+  padding-bottom: 5em !important;
 }
+
+.p1{
+  padding: 1em;
+
+}
+
+.p2{
+  padding: 2em;
+
+}
+
+
+
+.p4{
+  padding: 4em;
+
+}
+
+.p5{
+  padding: 5em;
+
+}
+
+
 
  
 
@@ -4489,3 +4743,126 @@ background: #38a7de !important;
 .margin-services-5{
   margin-bottom: 55px !important;
 }
+
+
+/*********accordiones estilo*****/
+
+
+.accordion>.card>.card-header {
+ 
+  background: #00a9e1 !important;
+  border-bottom: 5px solid #fff;
+}
+
+.accordion>.card>.card-header h5.mb-0{
+  color: #fff;
+
+}
+
+.accordion>.card>.card-header {
+  border-radius: 50px;
+  margin-bottom: -1px;
+}
+
+.card {
+  border-radius: 27px !important;
+  background: white !important;
+ 
+    border: 0 !important;
+   
+ 
+}
+
+.card-body {
+  background: transparent !important;
+
+
+
+
+}
+
+
+
+
+/***********************medias responsive*************************/
+@media   (max-width: 768px) {
+  .visible-xs{
+    display: block !important;
+  }
+
+  .hidden-xs{
+    display: none !important;
+  }
+
+  .mt2-xs{
+    margin-top: 2em;
+  }
+
+  .p1-xs{
+    padding: 1em !important;
+  }
+
+  .pt0-xs {
+padding-top: 0em;
+  }
+
+  .pb0-xs{
+    padding-bottom: 0em;
+
+
+  }
+
+  .menu-logo{
+
+    width:  70px !important;
+    height: auto !important;
+    
+  }
+  button.navbar-toggler.nav-custome1{
+    margin-right: 15px !important;
+    margin-top: 15px !important;
+    padding: 6px;
+    background: #fefdfd;
+    transition: 0.5s;
+
+  }
+  .fixed-top button.navbar-toggler.nav-custome1 {
+    margin-top: 29px !important;
+    margin-right: 15px !important;
+    padding: 6px;
+   /* background: #02a9e1;*/
+    transition: 0.5s;
+}
+
+  /*****servicios principales*****/
+
+
+.slick-slide img{
+  display: initial !important;
+}
+
+
+
+  }
+
+  
+
+  @media   (min-width: 769px) and (max-width: 991px) {
+    .visible-xs{
+      display: none !important;
+    }
+  }
+
+  @media (min-width: 992px) and (max-width: 1200px) {
+    .visible-xs{
+      display: none !important;
+    }
+  }
+
+  @media (min-width: 1201px)   {
+    .visible-xs{
+      display: none !important;
+    }
+ 
+  }
+ 
