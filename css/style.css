@@ -522,6 +522,11 @@ a:focus {
   background-size: cover;
 }
 
+.banner--wrap2 {
+  background: linear-gradient(#ffffff,#ffffffad, #ffffff7a, #ffffffdb), url(../images/home-pic-1.jpg) center no-repeat;
+  background-size: cover;
+}
+
 .banner:focus {
   outline: none;
 }
@@ -2025,7 +2030,7 @@ a:focus {
 
 /* --------- Testimonials --------- */
 .testimonial {
-  padding: 90px 0;
+  padding: 30px 0;
 }
 
 .testi-slider .slick-track {
@@ -2089,9 +2094,11 @@ a:focus {
 
 .testimonial-wrap2 {
   position: relative;
-  border: 1px solid #38a7de !important;
-  padding: 35px;
+  /*border: 1px solid #38a7de !important;*/
+  padding: 15px;
+  box-shadow: 0px 0px 34px rgb(221 221 221);
   height: 500px;
+  background-color: #fff !important;
 }
 .testimonial-wrap2 ul {
   padding: 0;
