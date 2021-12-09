@@ -26,6 +26,7 @@ URL: https://themeforest.net/user/surjithctly/
 
 .navbar {
   padding: 0;
+  text-transform: uppercase !important;
 }
 @media (min-width: 992px) {
   .navbar {
@@ -472,8 +473,8 @@ h3, .h3 {
 }
 
 h4, .h4 {
-  font-size: 19px;
-  font-weight: 700;
+  font-size: 19px  ;
+ 
 }
 
 p {
@@ -1330,6 +1331,23 @@ a:focus {
   font-size: 13px;
 }
 
+.about-form2 {
+  background: url(../images/bg-home-form.jpg) no-repeat;
+  background-size: cover;
+}
+.about-form2 p {
+   
+  font-size: 14px;
+}
+.about-form2 .dental-features_list i {
+  background: #38a7de;
+}
+.about-form2 a {
+  border-radius: 8px;
+  font-size: 13px;
+}
+
+
 .booking-form-style2 {
   position: relative;
   background: #38a7de;
@@ -2042,7 +2060,7 @@ a:focus {
 
 .testimonial-wrap {
   position: relative;
-  border: 12px solid #38a7de !important;
+  border: 1px solid #38a7de !important;
   padding: 35px;
 }
 .testimonial-wrap ul {
@@ -2064,6 +2082,36 @@ a:focus {
   font-size: 17px;
 }
 .testimonial-wrap p span {
+  color: #38a7de;
+}
+
+
+
+.testimonial-wrap2 {
+  position: relative;
+  border: 1px solid #38a7de !important;
+  padding: 35px;
+  height: 500px;
+}
+.testimonial-wrap2 ul {
+  padding: 0;
+  margin: 0;
+}
+.testimonial-wrap2 ul li {
+  list-style: none;
+  display: inline-block;
+}
+.testimonial-wrap2 ul li i {
+  color: #f9c863;
+  font-size: 14px;
+  margin: 0 0 14px;
+}
+.testimonial-wrap2 p {
+ 
+ 
+  font-size: 17px;
+}
+.testimonial-wrap2 p span {
   color: #38a7de;
 }
 
@@ -2530,14 +2578,14 @@ ABOUT
 }
 @media (min-width: 768px) {
   .sub-header_main h2 {
-    font-size: 60px;
+    font-size: 48px;
     margin: 0;
     text-align: center;
   }
 }
 @media (min-width: 1200px) {
   .sub-header_main h2 {
-    font-size: 86px;
+    font-size: 64px;
     font-weight: 600;
     margin: 18px 0 0;
   }
@@ -3396,11 +3444,12 @@ CONTACT US
 }
 .contact-title_icon p {
   margin: 0;
-  font-size: 12px;
+  font-size: 20px;
+  font-weight: 600;
 }
 .contact-title_icon h6 {
   line-height: 1.8;
-  font-size: 14px;
+  font-size: 18px;
 }
 
 .get-in-touch {
@@ -4256,6 +4305,13 @@ a {
 }
 
 
+.redondo-nl, img.redondo-nl {
+ 
+  border-radius: 25px !important;
+}
+
+
+
 /*** Ajuste de logo del menu***/
 .menu-logo{
 
@@ -4385,6 +4441,11 @@ background: #38a7de !important;
   background: #01030a !important;
 
 }
+
+
+.css-color-blanco{
+  color: #fff !important ;
+}
 /***************************fuente************************/
 
 .fw-400{
@@ -4434,40 +4495,74 @@ background: #38a7de !important;
 }
 
 .pt1{
-  padding-top: 1em;
+  padding-top: 1em !important;
 }
 .pb1{
-  padding-bottom: 1em;
+  padding-bottom: 1em !important;
+}
+
+.pt0{
+  padding-top: 0em !important;
+}
+.pb0{
+  padding-bottom: 0em !important;
 }
 
 .pt2{
-  padding-top: 2em;
+  padding-top: 2em !important;
 }
 
 .pb2{
-  padding-bottom: 2em;
+  padding-bottom: 2em !important;
 }
 
 .pt3{
-  padding-top: 3em;
+  padding-top: 3em !important;
 }
 .pb3{
-  padding-bottom: 3em;
+  padding-bottom: 3em !important;
 }
 
 .pt4{
-  padding-top: 4em;
+  padding-top: 4em !important;
 }
 
 .pb4{
-  padding-bottom: 4em;
+  padding-bottom: 4em !important;
 }
 .pt5{
-  padding-top: 5em;
+  padding-top: 5em !important;
 }
 .pb5{
-  padding-bottom: 5em;
+  padding-bottom: 5em !important;
 }
+
+.p1{
+  padding: 1em;
+
+}
+
+.p2{
+  padding: 2em;
+
+}
+
+.p3{
+  padding: 3em;
+
+}
+
+.p4{
+  padding: 4em;
+
+}
+
+.p5{
+  padding: 5em;
+
+}
+
+
 
  
 
@@ -4488,4 +4583,37 @@ background: #38a7de !important;
 }
 .margin-services-5{
   margin-bottom: 55px !important;
+}
+
+
+/*********accordiones estilo*****/
+
+
+.accordion>.card>.card-header {
+ 
+  background: #00a9e1 !important;
+  border-bottom: 5px solid #fff;
+}
+
+.accordion>.card>.card-header h5.mb-0{
+  color: #fff;
+
+}
+
+.accordion>.card>.card-header {
+  border-radius: 50px;
+  margin-bottom: -1px;
+}
+
+.card {
+  border-radius: 27px !important;
+  background: white !important;
+ 
+    border: 0 !important;
+   
+ 
+}
+
+.card-body {
+  background: transparent !important;
 }
