@@ -535,7 +535,7 @@ form &&
   jQuery(document).ready(function( $ ) {
     $(window).scroll(function(){
       var scroll = jQuery(window).scrollTop();
-      if (scroll >= 200) {
+      if (scroll >= 500) {
         $("#fixedmenu").addClass("fixed-top  p3 p1-xs pt0 pb0 css-bg-blanco sombra-style slow-effect");
       }
   
