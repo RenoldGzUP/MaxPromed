@@ -1,0 +1,5 @@
+insert into schedule (sc_location_id,sc_location_name,sc_monday,sc_tuesday,sc_wednesday,sc_thursday,sc_friday,sc_sathurday,sc_sunday)
+values("nlF","Belfeld","18:15","18:15","18:15","18:15","18:15","14:15","18:15")
+
+insert into schedule (sc_location_id,sc_location_name,sc_monday,sc_tuesday,sc_wednesday,sc_thursday,sc_friday,sc_sathurday,sc_sunday)
+values("nlF","Belfeld","14:15","14:15","14:15","12:00","12:00","9:00","14:15")
