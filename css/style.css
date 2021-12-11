@@ -1156,7 +1156,7 @@ a:focus {
   position: absolute;
   top: 30px;
   left: 30px;
-  background: #092591;
+  background: #061550;
   padding: 14px 0;
   width: 90px;
   border-radius: 6px;
@@ -1170,7 +1170,7 @@ a:focus {
 .video-play-icon {
   position: relative;
   text-align: center;
-  background: #4aa983;
+  background: #38a7de;
   color: #fff;
   border-radius: 50%;
   width: 44px;
@@ -1335,6 +1335,24 @@ a:focus {
   border-radius: 8px;
   font-size: 13px;
 }
+
+
+.about-form3 {
+  background: url(../images/bg-home-form.jpg) no-repeat;
+  background-size: cover;
+}
+.about-form3 p {
+ 
+  font-size: 14px;
+}
+.about-form3 .dental-features_list i {
+  background: #38a7de;
+}
+.about-form3 a {
+  border-radius: 8px;
+  font-size: 13px;
+}
+
 
 .about-form2 {
   background: url(../images/bg-home-form.jpg) no-repeat;
@@ -2122,6 +2140,41 @@ a:focus {
   color: #38a7de;
 }
 
+
+
+/****/
+
+.testimonial-wrap5 {
+  position: relative;
+  /*border: 1px solid #38a7de !important;*/
+  padding: 15px;
+  box-shadow: 0px 0px 34px rgb(221 221 221);
+  height: 350px;
+  background-color: #fff !important;
+}
+.testimonial-wrap5 ul {
+  padding: 0;
+  margin: 0;
+}
+.testimonial-wrap5 ul li {
+  list-style: none;
+  display: inline-block;
+}
+.testimonial-wrap5 ul li i {
+  color: #f9c863;
+  font-size: 14px;
+  margin: 0 0 14px;
+}
+.testimonial-wrap5 p {
+  font-size: 15px;
+  line-height: 24px;
+}
+.testimonial-wrap5 p span {
+  color: #38a7de;
+}
+
+
+
 .margin-top-home{
 
   margin-bottom: -25px;
@@ -2211,7 +2264,7 @@ a:focus {
 .testimonial-wrap4 p {
  
  
-  font-size: 17px;
+  font-size: 14px;
 }
 .testimonial-wrap4 p span {
   color: #38a7de;
@@ -2428,6 +2481,17 @@ footer {
   -webkit-transform: rotate(90deg);
       -ms-transform: rotate(90deg);
           transform: rotate(90deg);
+}
+
+.contact-title a {
+  color: #38a7de !important;
+  transition: 0.4s;
+}
+
+
+.contact-title a:hover {
+  color: #092591 !important;
+  transition: 0.4s;
 }
 
 .foot-link-box {
@@ -2887,6 +2951,47 @@ DOCTORS
   vertical-align: middle;
 }
 .emergency-text p {
+  margin: 0;
+}
+
+
+.emergency2 {
+  padding: 90px 0;
+  background: url(../images/corona-virus-test-3.jpg) no-repeat;
+  background-size: cover;
+}
+
+.emergency-box2 {
+  background: url(../images/emergency-contact-bg.png) no-repeat #3aa7dd;
+  background-size: cover;
+  color: #fff;
+  padding: 40px;
+   
+}
+.emergency-box2 p {
+  font-size: 14px;
+}
+
+.emergency-block2 {
+  margin: 25px 0 0;
+}
+.emergency-block2 i {
+  font-size: 20px;
+  background: #38a7de;
+  text-align: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 4px;
+  margin: 0 14px 0 0;
+  vertical-align: middle;
+  padding: 11px 0;
+}
+
+.emergency-text2 {
+  display: inline-block;
+  vertical-align: middle;
+}
+.emergency-text2 p {
   margin: 0;
 }
 
@@ -3513,6 +3618,20 @@ CONTACT US
     padding: 13px 0;
     font-size: 35px;
 }
+
+.icon-hour{
+  background: none;
+  color: #38a7de;
+  border-radius: 0;
+  width: 0px;
+  height: 0px;
+  text-align: center;
+  padding: 0x 0;
+  font-size: 15px;
+
+}
+
+
 .contact-title img {
   width: 28px;
   margin-right: 10px;
@@ -3921,7 +4040,7 @@ PRICING
   border: 10px solid #fff;
 }
 /******end of pricing 2******/
-/*------------------------------------------------------------------
+/*-------------------------------------------f----------------------
 SERVICES 2
 -------------------------------------------------------------------*/
 /* --------- Services 2 --------- */
@@ -3935,13 +4054,13 @@ SERVICES 2
   background: #f4f6fa;
   padding: 40px 26px;
   border: 2px solid #ccc;
-  border-radius: 6px;
+  border-radius: 50px;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
   margin: 0 0 25px;
   z-index: 1;
-  height: 400px;
+  height: 550px;
 }
 .service-box2:hover {
   background: #38a7de;
@@ -3966,7 +4085,7 @@ SERVICES 2
   font-weight: 600;
 }
 .service-box2 p {
-  font-size: 13px;
+  font-size: 14px;
 }
 
 .service-box2-img {
@@ -4455,6 +4574,10 @@ a.btn.btn-dark  {
 
 /***Colores sitio web**/
 
+.css-bg-gris {
+  background: #ebebeb;
+}
+
 
 .css-bg-blanco{
   background-color: #fff;
@@ -4836,6 +4959,14 @@ background: #38a7de !important;
     margin-top: 2em;
   }
 
+  .text-center-xs{
+text-align: center !important;
+  }
+
+  .mt1-xs{
+    margin-top: 1em !important;
+  }
+
   .p1-xs{
     padding: 1em !important;
   }
@@ -4848,6 +4979,12 @@ padding-top: 0em;
     padding-bottom: 0em;
 
 
+  }
+
+  .contact-title_icon {
+    display: block;
+    vertical-align: top;
+    margin: 0 0 0 0px;
   }
 
   .menu-logo{
@@ -4893,6 +5030,16 @@ padding-top: 0em;
     .hidden-xs{
       display: none !important;
     }
+
+    .mt1-xs{
+      margin-top: 1em !important;
+    }
+    .contact-title_icon {
+      display: block;
+      vertical-align: top;
+      margin: 0 0 0 0px;
+    }
+  
   
   }
 
