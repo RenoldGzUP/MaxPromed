@@ -1,4 +1,4 @@
-/*------------------------------------------------------------------
+        /*------------------------------------------------------------------
 Theme Name: Medenin - Medical & Health Website Template
 Version: 1.0
 Author: @surjithctly
@@ -29,6 +29,7 @@ URL: https://themeforest.net/user/surjithctly/
 
 .navbar {
     padding: 0;
+    text-transform: uppercase !important;
 }
 
 @media (min-width: 992px) {
@@ -501,7 +502,6 @@ h3,
 h4,
 .h4 {
     font-size: 19px;
-    font-weight: 700;
 }
 
 p {
@@ -549,6 +549,11 @@ a:focus {
 
 .banner--wrap {
     background: url(../images/banner-bg.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.banner--wrap2 {
+    background: linear-gradient(#ffffff, #ffffffad, #ffffff7a, #ffffffdb), url(../images/home-pic-1.jpg) center no-repeat;
     background-size: cover;
 }
 
@@ -1000,7 +1005,7 @@ a:focus {
 
 .main-slider .slick-slide img {
     width: 100% !important;
-    height: 600px;
+    height: auto;
 }
 
 .slider-img-text {
@@ -1437,6 +1442,24 @@ a:focus {
 }
 
 .about-form a {
+    border-radius: 8px;
+    font-size: 13px;
+}
+
+.about-form2 {
+    background: url(../images/bg-home-form.jpg) no-repeat;
+    background-size: cover;
+}
+
+.about-form2 p {
+    font-size: 14px;
+}
+
+.about-form2 .dental-features_list i {
+    background: #38a7de;
+}
+
+.about-form2 a {
     border-radius: 8px;
     font-size: 13px;
 }
@@ -2190,7 +2213,7 @@ a:focus {
 /* --------- Testimonials --------- */
 
 .testimonial {
-    padding: 90px 0;
+    padding: 30px 0;
 }
 
 .testi-slider .slick-track {
@@ -2226,7 +2249,7 @@ a:focus {
 
 .testimonial-wrap {
     position: relative;
-    border: 12px solid #38a7de !important;
+    border: 1px solid #38a7de !important;
     padding: 35px;
 }
 
@@ -2251,6 +2274,102 @@ a:focus {
 }
 
 .testimonial-wrap p span {
+    color: #38a7de;
+}
+
+.testimonial-wrap2 {
+    position: relative;
+    /*border: 1px solid #38a7de !important;*/
+    padding: 15px;
+    box-shadow: 0px 0px 34px rgb(221 221 221);
+    height: 500px;
+    background-color: #fff !important;
+}
+
+.testimonial-wrap2 ul {
+    padding: 0;
+    margin: 0;
+}
+
+.testimonial-wrap2 ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+.testimonial-wrap2 ul li i {
+    color: #f9c863;
+    font-size: 14px;
+    margin: 0 0 14px;
+}
+
+.testimonial-wrap2 p {
+    font-size: 17px;
+}
+
+.testimonial-wrap2 p span {
+    color: #38a7de;
+}
+
+.testimonial-wrap3 {
+    position: relative;
+    /*border: 1px solid #38a7de !important;*/
+    padding: 15px;
+    height: 500px;
+    background-color: #fff !important;
+}
+
+.testimonial-wrap3 ul {
+    padding: 0;
+    margin: 0;
+}
+
+.testimonial-wrap3 ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+.testimonial-wrap3 ul li i {
+    color: #f9c863;
+    font-size: 14px;
+    margin: 0 0 14px;
+}
+
+.testimonial-wrap3 p {
+    font-size: 17px;
+}
+
+.testimonial-wrap3 p span {
+    color: #38a7de;
+}
+
+.testimonial-wrap4 {
+    position: relative;
+    border: 1px solid #38a7de !important;
+    padding: 20px;
+    height: 450px !important;
+}
+
+.testimonial-wrap4 ul {
+    padding: 0;
+    margin: 0;
+}
+
+.testimonial-wrap4 ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+.testimonial-wrap4 ul li i {
+    color: #f9c863;
+    font-size: 14px;
+    margin: 0 0 14px;
+}
+
+.testimonial-wrap4 p {
+    font-size: 17px;
+}
+
+.testimonial-wrap4 p span {
     color: #38a7de;
 }
 
@@ -2781,7 +2900,7 @@ ABOUT
 
 @media (min-width: 768px) {
     .sub-header_main h2 {
-        font-size: 60px;
+        font-size: 48px;
         margin: 0;
         text-align: center;
     }
@@ -2789,7 +2908,7 @@ ABOUT
 
 @media (min-width: 1200px) {
     .sub-header_main h2 {
-        font-size: 86px;
+        font-size: 64px;
         font-weight: 600;
         margin: 18px 0 0;
     }
@@ -3775,13 +3894,20 @@ CONTACT US
 }
 
 .contact-title_icon p {
-    margin: 0;
+    <<<<<<< HEAD margin: 0;
     font-size: 12px;
+    =======margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+    >>>>>>>main
 }
 
 .contact-title_icon h6 {
-    line-height: 1.8;
+    <<<<<<< HEAD line-height: 1.8;
     font-size: 14px;
+    =======line-height: 1.8;
+    font-size: 18px;
+    >>>>>>>main
 }
 
 .get-in-touch {
@@ -4783,6 +4909,19 @@ img.redondo {
     border-radius: 50px !important;
 }
 
+.redondo-nl,
+img.redondo-nl {
+    border-radius: 25px !important;
+}
+
+.sombra-style {
+    box-shadow: 0px 0px 30px #a5a5a5;
+}
+
+.slow-effect {
+    transition: 0.5s;
+}
+
 
 /*** Ajuste de logo del menu***/
 
@@ -4820,225 +4959,373 @@ a.btn.btn-dark {
 
 /***Colores sitio web**/
 
+.css-bg-blanco {
+    background-color: #fff;
+}
+
 .css-color-1 {
-    color: #38a7de !important;
-}
-
-.css-color-1-light {
-    color: #73b9dc !important;
-}
-
-.css-color-1-lighter {
-    color: #aac9d8 !important;
-}
-
-.css-color-1-dark {
-    color: #2a81ac !important;
-}
-
-.css-color-1-darker {
-    color: #194c66 !important;
-}
-
-.css-color-2 {
-    color: #061550 !important;
-}
-
-.css-color-2-light {
-    color: #0a2384 !important;
-}
-
-.css-color-2-lighter {
-    color: #1236c3 !important;
-}
-
-.css-color-2-dark {
-    color: #030d31 !important;
-}
-
-.css-color-2-darker {
-    color: #01030a !important;
-}
-
-.css-bg-1 {
-    background: #38a7de !important;
-}
-
-.css-bg-1-light {
-    background: #73b9dc !important;
-}
-
-.css-bg-1-lighter {
-    background: #aac9d8 !important;
-}
-
-.css-bg-1-dark {
-    background: #2a81ac !important;
-}
-
-.css-bg-1-darker {
-    background: #194c66 !important;
-}
-
-.css-bg-2 {
-    background: #061550 !important;
-}
-
-.css-bg-2-light {
-    background: #0a2384 !important;
-}
-
-.css-bg-2-lighter {
-    background: #1236c3 !important;
-}
-
-.css-bg-2-dark {
-    background: #030d31 !important;
-}
-
-.css-bg-2-darker {
-    background: #01030a !important;
-}
-
-
-/***************************fuente************************/
-
-.fw-400 {
-    font-weight: 400 !important;
-}
-
-.h3 {
-    font-size: 20px !important;
-}
-
-
-/******** espaciados******/
-
-.mt1 {
-    margin-top: 1em;
-}
-
-.mb1 {
-    margin-bottom: 1em;
-}
-
-.mt2 {
-    margin-top: 2em;
-}
-
-.mb2 {
-    margin-bottom: 2em;
-}
-
-.mt3 {
-    margin-top: 3em;
-}
-
-.mb3 {
-    margin-bottom: 3em;
-}
-
-.mt4 {
-    margin-top: 4em;
-}
-
-.mb4 {
-    margin-bottom: 4em;
-}
-
-.mt5 {
-    margin-top: 5em;
-}
-
-.mb5 {
-    margin-bottom: 5em;
-}
-
-.pt1 {
-    padding-top: 1em;
-}
-
-.pb1 {
-    padding-bottom: 1em;
-}
-
-.pt2 {
-    padding-top: 2em;
-}
-
-.pb2 {
-    padding-bottom: 2em;
-}
-
-.pt3 {
-    padding-top: 3em;
-}
-
-.pb3 {
-    padding-bottom: 3em;
-}
-
-.pt4 {
-    padding-top: 4em;
-}
-
-.pb4 {
-    padding-bottom: 4em;
-}
-
-.pt5 {
-    padding-top: 5em;
-}
-
-.pb5 {
-    padding-bottom: 5em;
-}
-
-
-/******* altura de los servicios*****/
-
-.margin-services-1 {
-    margin-bottom: 79px !important;
-}
-
-.margin-services-2 {
-    margin-bottom: 55px !important;
-}
-
-.margin-services-3 {
-    margin-bottom: 55px !important;
-}
-
-.margin-services-4 {
-    margin-bottom: 5px !important;
-}
-
-.margin-services-5 {
-    margin-bottom: 55px !important;
-}
-
-
-/*************** Selectable Option *******************/
-
-.optionBusy {
-    font-weight: bold !important;
-    color: #fff !important;
-    background: #a39f9f !important;
-    text-transform: uppercase;
-}
-
-.optionAvailable {
-    font-weight: bold !important;
-    color: #fff !important;
-    background: #2dd351 !important;
-    text-transform: uppercase;
-}
-
-div.ex3 {
-    background-color: rgb(255, 255, 255);
-    width: auto;
-    height: 160px;
-    overflow: auto;
-    text-align: justify;
-    text-justify: inter-word;
-}
+    /***Colores sitio web**/
+    .css-color-1 {
+        color: #38a7de !important;
+    }
+    .css-color-1-light {
+        color: #73b9dc !important;
+    }
+    .css-color-1-lighter {
+        color: #aac9d8 !important;
+    }
+    .css-color-1-dark {
+        color: #2a81ac !important;
+    }
+    .css-color-1-darker {
+        color: #194c66 !important;
+    }
+    .css-color-2 {
+        color: #061550 !important;
+    }
+    .css-color-2-light {
+        color: #0a2384 !important;
+    }
+    .css-color-2-lighter {
+        color: #1236c3 !important;
+    }
+    .css-color-2-dark {
+        color: #030d31 !important;
+    }
+    .css-color-2-darker {
+        color: #01030a !important;
+    }
+    .css-bg-1 {
+        background: #38a7de !important;
+    }
+    .css-bg-1-light {
+        background: #73b9dc !important;
+    }
+    .css-bg-1-lighter {
+        background: #aac9d8 !important;
+    }
+    .css-bg-1-dark {
+        background: #2a81ac !important;
+    }
+    .css-bg-1-darker {
+        background: #194c66 !important;
+    }
+    .css-bg-2 {
+        background: #061550 !important;
+    }
+    .css-bg-2-light {
+        background: #0a2384 !important;
+    }
+    .css-bg-2-lighter {
+        background: #1236c3 !important;
+    }
+    .css-bg-2-dark {
+        background: #030d31 !important;
+    }
+    .css-bg-2-darker {
+        background: #01030a !important;
+    }
+    /***************************fuente************************/
+    .fw-400 {
+        font-weight: 400 !important;
+    }
+    .h3 {
+        font-size: 20px !important;
+    }
+    /******** espaciados******/
+    .mt1 {
+        margin-top: 1em;
+    }
+    .mb1 {
+        margin-bottom: 1em;
+    }
+    <<<<<<< HEAD=======.css-color-blanco {
+        color: #fff !important;
+    }
+    /*******boton flotante******/
+    .social-1 {
+        position: fixed;
+        left: 5px;
+        top: 90%;
+        z-index: 2000;
+    }
+    .hover-style:hover {
+        background: #061550 !important;
+        color: #fff;
+        transition: 0.5s;
+        box-shadow: 0px 5px 9px #b1b1b1;
+    }
+    .social-1 ul {
+        list-style: none;
+        padding: 0;
+    }
+    .social-2 ul {
+        list-style: none;
+        padding: 0;
+    }
+    .social-2 ul {
+        list-style: none;
+        padding: 0;
+    }
+    .social-2 {
+        position: fixed;
+        right: 5px;
+        top: 90%;
+        z-index: 2000;
+    }
+    .social-3 ul {
+        list-style: none;
+        padding: 0;
+    }
+    .social-3 ul {
+        list-style: none;
+        padding: 0;
+    }
+    .social-3 {
+        position: fixed;
+        right: 5px;
+        top: 83%;
+        z-index: 2000;
+    }
+    .social-2 ul {
+        list-style: none;
+        padding: 0;
+    }
+    /***************************fuente************************/
+    >>>>>>>main .mt2 {
+        margin-top: 2em;
+    }
+    <<<<<<< HEAD .mb2 {
+        margin-bottom: 2em;
+        =======.fw-800 {
+            font-weight: 800 !important;
+        }
+        .fw-600 {
+            font-weight: 600 !important;
+        }
+        .fw-300 {
+            font-weight: 300 !important;
+        }
+        .h3 {
+            font-size: 20px !important;
+            >>>>>>>main
+        }
+        .mt3 {
+            margin-top: 3em;
+        }
+        .mb3 {
+            margin-bottom: 3em;
+        }
+        .mt4 {
+            margin-top: 4em;
+        }
+        .mb4 {
+            margin-bottom: 4em;
+        }
+        .mt5 {
+            margin-top: 5em;
+        }
+        .mb5 {
+            margin-bottom: 5em;
+        }
+        .pt1 {
+            padding-top: 1em;
+        }
+        .pb1 {
+            padding-bottom: 1em;
+        }
+        .pt2 {
+            padding-top: 2em;
+        }
+        .pb2 {
+            padding-bottom: 2em;
+        }
+        <<<<<<< HEAD .pt3 {
+            padding-top: 3em;
+        }
+        .pb3 {
+            padding-bottom: 3em;
+        }
+        .pt4 {
+            padding-top: 4em;
+        }
+        .pb4 {
+            padding-bottom: 4em;
+        }
+        .pt5 {
+            padding-top: 5em;
+        }
+        .pb5 {
+            padding-bottom: 5em;
+        }
+        /******* altura de los servicios*****/
+        .margin-services-1 {
+            margin-bottom: 79px !important;
+        }
+        .margin-services-2 {
+            margin-bottom: 55px !important;
+        }
+        .margin-services-3 {
+            margin-bottom: 55px !important;
+        }
+        .margin-services-4 {
+            margin-bottom: 5px !important;
+        }
+        .margin-services-5 {
+            margin-bottom: 55px !important;
+        }
+        =======.pt1 {
+            padding-top: 1em !important;
+        }
+        .pb1 {
+            padding-bottom: 1em !important;
+        }
+        .p3 {
+            padding: 3em !important;
+        }
+        .pt0 {
+            padding-top: 0em !important;
+        }
+        .pb0 {
+            padding-bottom: 0em !important;
+        }
+        .pt2 {
+            padding-top: 2em !important;
+        }
+        .pb2 {
+            padding-bottom: 2em !important;
+        }
+        .pt3 {
+            padding-top: 3em !important;
+        }
+        .pb3 {
+            padding-bottom: 3em !important;
+        }
+        .pt4 {
+            padding-top: 4em !important;
+        }
+        .pb4 {
+            padding-bottom: 4em !important;
+        }
+        .pt5 {
+            padding-top: 5em !important;
+        }
+        .pb5 {
+            padding-bottom: 5em !important;
+        }
+        .p1 {
+            padding: 1em;
+        }
+        .p2 {
+            padding: 2em;
+        }
+        .p4 {
+            padding: 4em;
+        }
+        .p5 {
+            padding: 5em;
+        }
+        >>>>>>>main
+        /*************** Selectable Option *******************/
+        .optionBusy {
+            font-weight: bold !important;
+            color: #fff !important;
+            background: #a39f9f !important;
+            text-transform: uppercase;
+        }
+        .optionAvailable {
+            font-weight: bold !important;
+            color: #fff !important;
+            background: #2dd351 !important;
+            text-transform: uppercase;
+        }
+        <<<<<<< HEAD div.ex3 {
+            background-color: rgb(255, 255, 255);
+            width: auto;
+            height: 160px;
+            overflow: auto;
+            text-align: justify;
+            text-justify: inter-word;
+        }
+        =======.margin-services-5 {
+            margin-bottom: 55px !important;
+        }
+        /*********accordiones estilo*****/
+        .accordion>.card>.card-header {
+            background: #00a9e1 !important;
+            border-bottom: 5px solid #fff;
+        }
+        .accordion>.card>.card-header h5.mb-0 {
+            color: #fff;
+        }
+        .accordion>.card>.card-header {
+            border-radius: 50px;
+            margin-bottom: -1px;
+        }
+        .card {
+            border-radius: 27px !important;
+            background: white !important;
+            border: 0 !important;
+        }
+        .card-body {
+            background: transparent !important;
+        }
+        /***********************medias responsive*************************/
+        @media (max-width: 768px) {
+            .visible-xs {
+                display: block !important;
+            }
+            .hidden-xs {
+                display: none !important;
+            }
+            .mt2-xs {
+                margin-top: 2em;
+            }
+            .p1-xs {
+                padding: 1em !important;
+            }
+            .pt0-xs {
+                padding-top: 0em;
+            }
+            .pb0-xs {
+                padding-bottom: 0em;
+            }
+            .menu-logo {
+                width: 70px !important;
+                height: auto !important;
+            }
+            button.navbar-toggler.nav-custome1 {
+                margin-right: 15px !important;
+                margin-top: 15px !important;
+                padding: 6px;
+                background: #fefdfd;
+                transition: 0.5s;
+            }
+            .fixed-top button.navbar-toggler.nav-custome1 {
+                margin-top: 29px !important;
+                margin-right: 15px !important;
+                padding: 6px;
+                /* background: #02a9e1;*/
+                transition: 0.5s;
+            }
+            /*****servicios principales*****/
+            .slick-slide img {
+                display: initial !important;
+            }
+        }
+        @media (min-width: 769px) and (max-width: 991px) {
+            .visible-xs {
+                display: none !important;
+            }
+        }
+        @media (min-width: 992px) and (max-width: 1200px) {
+            .visible-xs {
+                display: none !important;
+            }
+        }
+        @media (min-width: 1201px) {
+            .visible-xs {
+                display: none !important;
+            }
+        }
+        >>>>>>>main
