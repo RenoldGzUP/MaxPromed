@@ -310,11 +310,18 @@
                                       </select>
                                 </div>
 
-                                <div class="form-group col-md-8">
+                                <div class="form-group col-md-4">
                                     <label>BSN nummer (Vul hier uw BSN nummer in)</label>
-                                    <input name="max_bsn_number" type="number" class="form-control" id="inputPhone" placeholder="!Bent u geen inwoner van Nederland, voer dan 000000000 in.">
+                                    <input name="max_bsn_number" type="number" class="form-control" id="inputPhone" placeholder="">
                                 </div>
+
+                                <div class="form-group col-md-4">
+                                    <p><b>* !Bent u geen inwoner van Nederland, voer dan 000000000 in.</b></p>
+                                </div>
+
+
                             </div>
+
 
                             <div class="form-row">
 
@@ -363,7 +370,7 @@
                                       <option selected>Choose...</option>
                                       <option>Antigest €29.95  </option>
                                       <option>Antibodytest €29.95...</option>
-                                      <option>PCR Saliva Test €59.95</option>
+                                      <option selected>PCR Saliva Test €59.95</option>
                                       <option>PCR throat/nose swab €59,95</option>
                                       <option>PCR Emergencry test €129.95</option>
 
@@ -387,12 +394,12 @@
                                     <label for="inputState">Testing Location</label>
                                     <select name="max_test_location" id="inputTestingLocation" class="form-control" onchange="getTestingCode()">
                                       <option selected>Choose...</option>
-                                      <option value="nlD">Industriekade 46, 6006SJ, Weert, Netherlands (Testing Location)</option>
-                                      <option value="nlC">Hortsedijk 106b, 5708 HE, Helmond, Netherlands (Testing Location)</option>
-                                      <option value="nlB">Dreef 5, 5504LA, Veldhoven, Netherlands (Testing Location)</option>
-                                      <option value="nlf">Blauwwater 12B, 5951 DB, Belfeld, the Netherlands (Testing Location)</option>
-                                      <option value="nlE">Schoorgras 20 , 5986 PK Beringe (Testing Location)</option>
-                                      <option value="nlA">Wilhelminaplein 12 , 5611 HE Eindhoven (Testing Location)</option>
+                                      <option value="Industriekade 46, 6006SJ, Weert, Netherlands (Testing Location)">Industriekade 46, 6006SJ, Weert, Netherlands (Testing Location)</option>
+                                      <option value="Hortsedijk 106b, 5708 HE, Helmond, Netherlands (Testing Location)">Hortsedijk 106b, 5708 HE, Helmond, Netherlands (Testing Location)</option>
+                                      <option value="Dreef 5, 5504LA, Veldhoven, Netherlands (Testing Location)">Dreef 5, 5504LA, Veldhoven, Netherlands (Testing Location)</option>
+                                      <option value="Blauwwater 12B, 5951 DB, Belfeld, the Netherlands (Testing Location)">Blauwwater 12B, 5951 DB, Belfeld, the Netherlands (Testing Location)</option>
+                                      <option value="Schoorgras 20 , 5986 PK Beringe (Testing Location)">Schoorgras 20 , 5986 PK Beringe (Testing Location)</option>
+                                      <option value="Wilhelminaplein 12 , 5611 HE Eindhoven (Testing Location)">Wilhelminaplein 12 , 5611 HE Eindhoven (Testing Location)</option>
                                     </select>
                                 </div>
 
@@ -422,7 +429,7 @@
                                     <span class="badge badge-success">Leeg</span>
                                     <span class="badge badge-secondary">Vol</span>
 
-                                    <select name="max_test_hour_av" id="inputTestingHour" class="form-control">
+                                    <select name="max_test_hour_av" id="inputTestStatus" class="form-control">
                                       <option selected>Choose...</option>
                                       <option>8:00</option>
                                       <option class="optionBusy" disabled>8:15</option>
@@ -442,60 +449,69 @@
                                         <div class="card-body">
                                             <div class="ex3">
                                                 <h3 class="card-title">Beste lezer,</h3>
-                                                <p class="card-text">
+
+                                                <span>
                                                     Bij deze verklaart u dat u begrijpt dat testen kan afwijken van de daadwerkelijke situatie en uitslagen dus niet 100% betrouwbaar zijn. Holland Distribution VOF (MaxProMed) neemt dan ook geen verantwoordelijkheid voor de correctheid van de test, of voor
                                                     de keuzes die u of uw werknemers op basis van de uitslag van deze test nemen. Bij deze verklaart u dat indien u een test los aanschaft, u deze tests door iemand laat afnemen die BIG geregistreerd is
                                                     of onder de verlengde arm van een BIG geregistreerd zorgprofessional staat, indien u dit niet door MaxProMed laat doen. Wij kunnen niet aansprakelijk worden gesteld voor het afnemen van de tests en hoe
-                                                    deze worden afgenomen. Bij een positieve uitslag kan verder onderzoek worden aangevraagd om de besmetting officieel te laten bevestigen. Zowel positieve als negatieve testresultaten kunnen afwijken van
-                                                    de werkelijkheid. Testen zoals antigeen testen en antistoffen testen slechts als ondersteuning voor het detecteren van het virus en detecteren mogelijk alleen de antistoffen (AG) of antilichamen (IgG/IgM).
-                                                    De test is geen vervanging voor laboratorium onderzoek/testen. Uit de test (zowel bij positief of negatief) kunnen geen rechten worden ontleend. MaxProMed behoudt de mogelijkheid positieve uitslagen
-                                                    te delen met de GGD en/of RIVM, en zelf een bron en contact onderzoek uit te voeren. Hiervoor is uw medewerking nodig, alsmede uw telefoonnummer. MaxProMed is niet in het bezit van uw medisch dossier,
-                                                    en kan u behalve het verstrekken van certificaten en het doorgeven van uw testuitslag aan de GGD niet ondersteunen in het verkrijgen van non-covid-declaraties of bewijzen dat u positief bent geweest.
-                                                    De verantwoordelijkheid om te zorgen dat u geregistreerd staat als zijnde positief waardoor u bijvoorbeeld mogelijk geen of minder vaccinaties nodig heeft ligt dus nooit en te nimmer bij MaxProMed. Het
-                                                    met terugwerkende kracht uitgeven van “positieve” certificaten is niet mogelijk indien wij uw gegevens niet meer in ons systeem hebben staan. Gemaakte prijsafspraken in geval van korting blijven tussen
-                                                    MaxProMed en de klant, en zullen niet met derde partijen gedeeld worden. Alle prijzen zijn Ex Btw indien van toepassing. Op uw locatie rekenen wij naast de prijs voor de tests op basis van de staffel
-                                                    een extra €250 (vast, eenmalig) om met een zorgprofessional op locatie langs te komen en €15 per test om deze af te nemen. Onze voorrijkosten bedragen €1 per kilometer. Indien bedragen of voorrijkosten
-                                                    schriftelijk anders afgesproken zijn, factureren wij de schriftelijk afgesproken prijzen. Betaling vindt plaats binnen 14 dagen na facturering. Indien ons bedrijf als gevolg van de niet dan wel niet
-                                                    tijdige betaling zich genoodzaakt ziet haar vordering ter incasso uit handen te geven, komen alle daarmee gepaard gaande kosten, waaronder administratiekosten, gerechtelijke en buitengerechtelijke kosten,
-                                                    voor rekening van de opdrachtgever. In geval de klant/opdrachtgever in verzuim is, worden incasso kosten in rekening gebracht, alsmede een vertragingsrente gelijk aan 1,5% per maand. U geeft bij deze
-                                                    aan akkoord te gaan met de kosten. Dit geld zowel voor testen afgenomen in onze teststraat als testen afgenomen op locatie van de klant. Testen of testafspraken kunnen nooit worden geannuleerd binnen
-                                                    24 uur voor uw afspraak. Indien u uw afspraak op langere termijn wilt annuleren dient u dit te bespreken met MaxProMed. MaxProMed behoudt alle rechten om restitutie of annulering te weigeren. Dit geld
-                                                    voor zowel afspraken in onze teststraat als afspraken op uw locatie, als afspraak. Voor testen op uw locatie kunnen naast de voorrijdkosten en een vast bedrag van 250 euro ook overige gemaakte kosten
-                                                    in rekening gebracht worden wanneer een afspraak toch (al dan niet met wederzijdse instemming) binnen 24 uur wordt geannuleerd. Indien uitslagen niet, niet op tijd, of niet juist worden doorgegeven door
-                                                    MaxProMed is het in sommige gevallen in overleg mogelijk een restitutie te krijgen. Echter zal deze restitutie nooit hoger zijn dan het bedrag van de test zelf. MaxProMed kan niet aansprakelijk worden
-                                                    gesteld voor – en is niet verantwoordelijk voor verder geleden schade, zoals schade die voortkomt uit het door het niet, niet juist, of niet tijdig ontvangen van uw testuitslag of certificaat. Wel zullen
-                                                    wij er alles aan doen om te zorgen dat u tijdig een juiste testuitslag ontvangt. Indien u geen uitslag heeft ontvangen, of indien er fouten optreden, bijvoorbeeld in uw certificaat, neem dan zo snel
-                                                    mogelijk bij voorkeur telefonisch (of indien dit niet mogelijk is per mail) contact met ons op zodat wij de fout tijdig kunnen herstellen. De klant dient ten alle tijden zelf tijdig te checken of de
-                                                    informatie op het certificaat voldoende is voor het doel, en of alle details op het certificaat correct zijn. Indien de uitslag of het bewijs hiervan niet voldoende is voor de bestemming is dit niet
-                                                    de verantwoordelijkheid van MaxProMed, al zullen wij u wel proberen te helpen om u te ondersteunen zodat het testbewijs voor uw doel gebruikt kan worden voor zover dit redelijkerwijs van ons verwacht
-                                                    mag worden. Ook is het betreden van onze teststraat op eigen risico, en kan MaxProMed niet aansprakelijk worden gesteld voor schade of gezondheidsklachten die mogelijk worden opgelopen op onze locatie.
-                                                    Indien wij gebruik maken van uw locatie bent u zelf verantwoordelijk voor de veiligheid van deze locatie, en dient u ervoor te zorgen dat het besmettingsgevaar en de mogelijkheid op kruisbesmetting geminimaliseerd
-                                                    wordt. Bij deze stemt u ook in dat MaxProMed indien gewenst uw naam en logo op de website en andere locaties mag gebruiken als referentie naar onze klanten. Bij deze geeft u aan dat u uw werknemer(s)
-                                                    of collega’s hebt ingelicht dat testen ten alle tijden vrijwillig is en zij hier niet toe gedwongen worden. Ook verklaart u dat uw werknemers ermee instemmen (en dat u hier toestemming voor heeft) dat
-                                                    wij de uitslagen met u delen. Wij delen uitslagen uitgevend met de opdrachtgever ten goede trouw dat hij de werknemers zal informeren indien ze negatief blijken te zijn. U geeft bij deze aan dat u, uw
-                                                    werknemers en uw collega’s er mee instemmen dat wij uitslagen delen met u, en om hun identiteitsbewijs, en mogelijk hier ook een kopie van maken van het rijbewijs, paspoort of de ID kaart. Indien u of
-                                                    uw werknemers positief zijn dienen zij zich opnieuw te melden bij ons met legitimatie om verder verwerkt te kunnen worden bij de GGD. U geeft aan hiervan op de hoogte te zijn en ons indien u positief
-                                                    blijkt te zijn alle gegevens over te dragen (volledig mee te werken). U geeft MaxProMed toestemming om uw resultaten te analyseren, dan wel persoonlijk, dan wel in een extern laboratorium. Ook geeft
-                                                    u toestemming voor het afnemen van het monster. U geeft ons toestemming uw collega’s en/of werkgever in te lichten wat de uitslag is. Ook de werkgever / opdrachtgever zal worden ingelicht, en geeft u
-                                                    toestemming om met deze informatie adequaat te handelen. Ook geeft u toestemming voor de afname via neus, keel, en speeksel. Ook gaat u akkoord met analyse door een extern lab en het delen van resultaten
-                                                    met de GGD en uw werkgever. Bij deze geeft u aan op de hoogte te zijn van het feit dat testen niet gebruikt kunnen worden om immuniteit aan te tonen, om een verplichte quarantaine af te kopen, of om
-                                                    u niet aan de corona (leef)regels en richtlijnen te hoeven houden (zoals de regels omtrent thuisbezoek, samenscholing, mondkapjesplicht en afstand houden). U stemt er mee in dat wij uw persoonlijke gegevens
-                                                    bijhouden, en mogelijk een (tijdelijk) kopie maken van de legitimatie (rijbewijs, ID of paspoort) wat tot 31 dagen bewaard kan worden om zo certificaten te maken en melding te kunnen maken bij de GGD.
-                                                    Dit doen wij via een beveiligde mailserver. Nadat MaxProMed de gegevens heeft verwijdert kan er met terugwerkende kracht geen bewijs of certificaat van het testen of van de testslag meer uitgegeven worden.
-                                                    Ook bent u ervan op de hoogte dat het voor een certificaat verplicht is om een paspoort of ID kaart bij u te hebben wanneer u getest wordt. MaxProMed maakt naast gevalideerde antigeen testen ook gebruik
-                                                    van rt-PCR testen. Deze PCR testen worden door externe laboratoria geanalyseerd. Bij PCR testen ligt verantwoordelijkheid van de analyse, alsmede de communicatie van de uitslagen en certificaten richting
-                                                    de client en de GGD niet bij MaxProMed. U geeft bij deze aan op de hoogte te zijn van het feit dat voor speeksel testen de cliënt niet mag eten (ook geen kauwgum/pepermunt), drinken of roken binnen 30
-                                                    minuten van testafname, aangezien dit de analyse van het sample in het laboratorium bemoeilijkt en de kans vergroot op een invalide resultaat. Ook dient 30 min voor afname de mond gespoeld te worden
-                                                    met water. MaxPromed is niet verantwoordelijk voor de monsterafname. Monsters dienen zonder bellen in het spuug, en gevuld tot het streepje te worden aangeleverd voor de speekseltest. Niet goed of niet
-                                                    volledig aangeleverde monsters kunnen ervoor zorgen dat er geen correcte analyse uitgevoerd kan worden. De cliënt dient de aanwijzingen in de gebruiksaanwijzing te lezen en op te volgen voor een juiste
-                                                    afname van het monster. Het is ten alle tijden mogelijk dat er een invalide testresultaat tot stand komt (bijvoorbeeld door te eten voor de test). MaxProMed is hier niet verantwoordelijk voor. In dit
-                                                    geval moet het monster opnieuw geanalyseerd worden en gaat het pas mee in de volgende analyseronde. Er worden maximaal 2 analyses uitgevoerd, 1 reguliere analyse en 1 her-analyse (her-analyse kan tot
-                                                    24 uur langer duren). Indien de uitslag niet sluitend is, zal er een nieuw monster moeten worden aangeleverd tegen extra betaling. Indien de cliënt een reis heeft gepland, kan het daardoor voorkomen
-                                                    dat de uitslag en certificaat niet tijdig voor vertrek kunnen worden verstrekt. Dit is voor verantwoordelijkheid van de cliënt. MaxProMed kan geen verantwoordelijkheid dragen over de snelheid en analyse
-                                                    van de testen. Indien u dezelfde dag nog de uitslag van de PCR test wilt ontvangen, is het belangrijk dat de monsterafname voor 11:30 gebeurd. Resultaten moeten eerst door externe partners worden vrijgegeven,
-                                                    waardoor MaxProMed niet verantwoordelijk is voor tijdige communicatie naar de cliënt. Wanneer u zich in de teststraat of op locatie door ons laat testen gaan wij er van uit dat u hiervan op de hoogte
-                                                    bent en u hiermee akkoord gaat. Indien u zich laat testen door ons / onze zorgprofessionals / onze overige getrainde werknemers gaat u automatisch akkoord met deze algemene voorwaarden. Mocht een van
-                                                    deze punten nietig of vernietigbaar zijn, dan heeft dat geen invloed op de andere punten uit dit document. Met vriendelijke groeten,
+                                                    deze worden afgenomen.
+                                                </span>
+                                                <br>
+                                                <span>
+
+                                                 </span>
+                                                <p class="card-text">
+
+                                                    Bij een positieve uitslag kan verder onderzoek worden aangevraagd om de besmetting officieel te laten bevestigen. Zowel positieve als negatieve testresultaten kunnen afwijken van de werkelijkheid. Testen zoals antigeen testen en antistoffen testen slechts
+                                                    als ondersteuning voor het detecteren van het virus en detecteren mogelijk alleen de antistoffen (AG) of antilichamen (IgG/IgM). De test is geen vervanging voor laboratorium onderzoek/testen. Uit de
+                                                    test (zowel bij positief of negatief) kunnen geen rechten worden ontleend. MaxProMed behoudt de mogelijkheid positieve uitslagen te delen met de GGD en/of RIVM, en zelf een bron en contact onderzoek
+                                                    uit te voeren. Hiervoor is uw medewerking nodig, alsmede uw telefoonnummer. MaxProMed is niet in het bezit van uw medisch dossier, en kan u behalve het verstrekken van certificaten en het doorgeven van
+                                                    uw testuitslag aan de GGD niet ondersteunen in het verkrijgen van non-covid-declaraties of bewijzen dat u positief bent geweest. De verantwoordelijkheid om te zorgen dat u geregistreerd staat als zijnde
+                                                    positief waardoor u bijvoorbeeld mogelijk geen of minder vaccinaties nodig heeft ligt dus nooit en te nimmer bij MaxProMed. Het met terugwerkende kracht uitgeven van “positieve” certificaten is niet
+                                                    mogelijk indien wij uw gegevens niet meer in ons systeem hebben staan. Gemaakte prijsafspraken in geval van korting blijven tussen MaxProMed en de klant, en zullen niet met derde partijen gedeeld worden.
+                                                    Alle prijzen zijn Ex Btw indien van toepassing. Op uw locatie rekenen wij naast de prijs voor de tests op basis van de staffel een extra €250 (vast, eenmalig) om met een zorgprofessional op locatie langs
+                                                    te komen en €15 per test om deze af te nemen. Onze voorrijkosten bedragen €1 per kilometer. Indien bedragen of voorrijkosten schriftelijk anders afgesproken zijn, factureren wij de schriftelijk afgesproken
+                                                    prijzen. Betaling vindt plaats binnen 14 dagen na facturering. Indien ons bedrijf als gevolg van de niet dan wel niet tijdige betaling zich genoodzaakt ziet haar vordering ter incasso uit handen te geven,
+                                                    komen alle daarmee gepaard gaande kosten, waaronder administratiekosten, gerechtelijke en buitengerechtelijke kosten, voor rekening van de opdrachtgever. In geval de klant/opdrachtgever in verzuim is,
+                                                    worden incasso kosten in rekening gebracht, alsmede een vertragingsrente gelijk aan 1,5% per maand. U geeft bij deze aan akkoord te gaan met de kosten. Dit geld zowel voor testen afgenomen in onze teststraat
+                                                    als testen afgenomen op locatie van de klant. Testen of testafspraken kunnen nooit worden geannuleerd binnen 24 uur voor uw afspraak. Indien u uw afspraak op langere termijn wilt annuleren dient u dit
+                                                    te bespreken met MaxProMed. MaxProMed behoudt alle rechten om restitutie of annulering te weigeren. Dit geld voor zowel afspraken in onze teststraat als afspraken op uw locatie, als afspraak. Voor testen
+                                                    op uw locatie kunnen naast de voorrijdkosten en een vast bedrag van 250 euro ook overige gemaakte kosten in rekening gebracht worden wanneer een afspraak toch (al dan niet met wederzijdse instemming)
+                                                    binnen 24 uur wordt geannuleerd. Indien uitslagen niet, niet op tijd, of niet juist worden doorgegeven door MaxProMed is het in sommige gevallen in overleg mogelijk een restitutie te krijgen. Echter
+                                                    zal deze restitutie nooit hoger zijn dan het bedrag van de test zelf. MaxProMed kan niet aansprakelijk worden gesteld voor – en is niet verantwoordelijk voor verder geleden schade, zoals schade die voortkomt
+                                                    uit het door het niet, niet juist, of niet tijdig ontvangen van uw testuitslag of certificaat. Wel zullen wij er alles aan doen om te zorgen dat u tijdig een juiste testuitslag ontvangt. Indien u geen
+                                                    uitslag heeft ontvangen, of indien er fouten optreden, bijvoorbeeld in uw certificaat, neem dan zo snel mogelijk bij voorkeur telefonisch (of indien dit niet mogelijk is per mail) contact met ons op
+                                                    zodat wij de fout tijdig kunnen herstellen. De klant dient ten alle tijden zelf tijdig te checken of de informatie op het certificaat voldoende is voor het doel, en of alle details op het certificaat
+                                                    correct zijn. Indien de uitslag of het bewijs hiervan niet voldoende is voor de bestemming is dit niet de verantwoordelijkheid van MaxProMed, al zullen wij u wel proberen te helpen om u te ondersteunen
+                                                    zodat het testbewijs voor uw doel gebruikt kan worden voor zover dit redelijkerwijs van ons verwacht mag worden. Ook is het betreden van onze teststraat op eigen risico, en kan MaxProMed niet aansprakelijk
+                                                    worden gesteld voor schade of gezondheidsklachten die mogelijk worden opgelopen op onze locatie. Indien wij gebruik maken van uw locatie bent u zelf verantwoordelijk voor de veiligheid van deze locatie,
+                                                    en dient u ervoor te zorgen dat het besmettingsgevaar en de mogelijkheid op kruisbesmetting geminimaliseerd wordt. Bij deze stemt u ook in dat MaxProMed indien gewenst uw naam en logo op de website en
+                                                    andere locaties mag gebruiken als referentie naar onze klanten. Bij deze geeft u aan dat u uw werknemer(s) of collega’s hebt ingelicht dat testen ten alle tijden vrijwillig is en zij hier niet toe gedwongen
+                                                    worden. Ook verklaart u dat uw werknemers ermee instemmen (en dat u hier toestemming voor heeft) dat wij de uitslagen met u delen. Wij delen uitslagen uitgevend met de opdrachtgever ten goede trouw dat
+                                                    hij de werknemers zal informeren indien ze negatief blijken te zijn. U geeft bij deze aan dat u, uw werknemers en uw collega’s er mee instemmen dat wij uitslagen delen met u, en om hun identiteitsbewijs,
+                                                    en mogelijk hier ook een kopie van maken van het rijbewijs, paspoort of de ID kaart. Indien u of uw werknemers positief zijn dienen zij zich opnieuw te melden bij ons met legitimatie om verder verwerkt
+                                                    te kunnen worden bij de GGD. U geeft aan hiervan op de hoogte te zijn en ons indien u positief blijkt te zijn alle gegevens over te dragen (volledig mee te werken). U geeft MaxProMed toestemming om uw
+                                                    resultaten te analyseren, dan wel persoonlijk, dan wel in een extern laboratorium. Ook geeft u toestemming voor het afnemen van het monster. U geeft ons toestemming uw collega’s en/of werkgever in te
+                                                    lichten wat de uitslag is. Ook de werkgever / opdrachtgever zal worden ingelicht, en geeft u toestemming om met deze informatie adequaat te handelen. Ook geeft u toestemming voor de afname via neus,
+                                                    keel, en speeksel. Ook gaat u akkoord met analyse door een extern lab en het delen van resultaten met de GGD en uw werkgever. Bij deze geeft u aan op de hoogte te zijn van het feit dat testen niet gebruikt
+                                                    kunnen worden om immuniteit aan te tonen, om een verplichte quarantaine af te kopen, of om u niet aan de corona (leef)regels en richtlijnen te hoeven houden (zoals de regels omtrent thuisbezoek, samenscholing,
+                                                    mondkapjesplicht en afstand houden). U stemt er mee in dat wij uw persoonlijke gegevens bijhouden, en mogelijk een (tijdelijk) kopie maken van de legitimatie (rijbewijs, ID of paspoort) wat tot 31 dagen
+                                                    bewaard kan worden om zo certificaten te maken en melding te kunnen maken bij de GGD. Dit doen wij via een beveiligde mailserver. Nadat MaxProMed de gegevens heeft verwijdert kan er met terugwerkende
+                                                    kracht geen bewijs of certificaat van het testen of van de testslag meer uitgegeven worden. Ook bent u ervan op de hoogte dat het voor een certificaat verplicht is om een paspoort of ID kaart bij u te
+                                                    hebben wanneer u getest wordt. MaxProMed maakt naast gevalideerde antigeen testen ook gebruik van rt-PCR testen. Deze PCR testen worden door externe laboratoria geanalyseerd. Bij PCR testen ligt verantwoordelijkheid
+                                                    van de analyse, alsmede de communicatie van de uitslagen en certificaten richting de client en de GGD niet bij MaxProMed. U geeft bij deze aan op de hoogte te zijn van het feit dat voor speeksel testen
+                                                    de cliënt niet mag eten (ook geen kauwgum/pepermunt), drinken of roken binnen 30 minuten van testafname, aangezien dit de analyse van het sample in het laboratorium bemoeilijkt en de kans vergroot op
+                                                    een invalide resultaat. Ook dient 30 min voor afname de mond gespoeld te worden met water. MaxPromed is niet verantwoordelijk voor de monsterafname. Monsters dienen zonder bellen in het spuug, en gevuld
+                                                    tot het streepje te worden aangeleverd voor de speekseltest. Niet goed of niet volledig aangeleverde monsters kunnen ervoor zorgen dat er geen correcte analyse uitgevoerd kan worden. De cliënt dient
+                                                    de aanwijzingen in de gebruiksaanwijzing te lezen en op te volgen voor een juiste afname van het monster. Het is ten alle tijden mogelijk dat er een invalide testresultaat tot stand komt (bijvoorbeeld
+                                                    door te eten voor de test). MaxProMed is hier niet verantwoordelijk voor. In dit geval moet het monster opnieuw geanalyseerd worden en gaat het pas mee in de volgende analyseronde. Er worden maximaal
+                                                    2 analyses uitgevoerd, 1 reguliere analyse en 1 her-analyse (her-analyse kan tot 24 uur langer duren). Indien de uitslag niet sluitend is, zal er een nieuw monster moeten worden aangeleverd tegen extra
+                                                    betaling. Indien de cliënt een reis heeft gepland, kan het daardoor voorkomen dat de uitslag en certificaat niet tijdig voor vertrek kunnen worden verstrekt. Dit is voor verantwoordelijkheid van de cliënt.
+                                                    MaxProMed kan geen verantwoordelijkheid dragen over de snelheid en analyse van de testen. Indien u dezelfde dag nog de uitslag van de PCR test wilt ontvangen, is het belangrijk dat de monsterafname voor
+                                                    11:30 gebeurd. Resultaten moeten eerst door externe partners worden vrijgegeven, waardoor MaxProMed niet verantwoordelijk is voor tijdige communicatie naar de cliënt. Wanneer u zich in de teststraat
+                                                    of op locatie door ons laat testen gaan wij er van uit dat u hiervan op de hoogte bent en u hiermee akkoord gaat. Indien u zich laat testen door ons / onze zorgprofessionals / onze overige getrainde
+                                                    werknemers gaat u automatisch akkoord met deze algemene voorwaarden. Mocht een van deze punten nietig of vernietigbaar zijn, dan heeft dat geen invloed op de andere punten uit dit document. Met vriendelijke
+                                                    groeten,
 
 
                                                 </p>
@@ -535,7 +551,7 @@
                             </div>
 
                             <br>
-                            <button type="submit" class="btn btn-primary">Book Now</button>
+                            <button type="submit" class="btn btn-primary">Afspraak maken</button>
                         </form>
                     </div>
 
