@@ -936,6 +936,9 @@ a:focus {
   width: 100% !important;
   height: auto;
 }
+.slick-slide img {
+  display: inline;
+}
 
 .slider-img-text {
   position: relative;
@@ -2149,7 +2152,7 @@ a:focus {
   /*border: 1px solid #38a7de !important;*/
   padding: 15px;
   box-shadow: 0px 0px 34px rgb(221 221 221);
-  height: 350px;
+  height: 400px;
   background-color: #fff !important;
 }
 .testimonial-wrap5 ul {
@@ -2216,7 +2219,7 @@ a:focus {
   /*border: 1px solid #38a7de !important;*/
   padding: 15px;
  
-  height: 760px;
+  height: 780px;
   background-color: #fff !important;
 }
 .testimonial-wrap3 ul {
@@ -2916,8 +2919,30 @@ DOCTORS
 
 .emergency {
   padding: 90px 0;
-  background: url(../images/corona-virus-test-3.jpg) no-repeat;
+  background: url(../images/covid-test-street.jpg) no-repeat;
   background-size: cover;
+  background-position: center;
+}
+
+.emergency-4 {
+  padding: 90px 0;
+  background: url(../images/covid-test-location.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.emergency-5 {
+  padding: 90px 0;
+  background: url(../images/antigen-test-quick.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.emergency-6 {
+  padding: 90px 0;
+  background: url(../images/covid-test-18.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .emergency-box {
@@ -3619,16 +3644,15 @@ CONTACT US
     font-size: 35px;
 }
 
-.icon-hour{
-  background: none;
-  color: #38a7de;
-  border-radius: 0;
-  width: 0px;
-  height: 0px;
-  text-align: center;
-  padding: 0x 0;
-  font-size: 15px;
-
+.icon-hour {
+  background: none !important;
+  color: #132157 !important;
+  border-radius: 0 !important;
+  width: auto !important;
+  height: auto !important;
+  text-align: center !important;
+  padding: 0px 0px !important;
+  font-size: 20px !important;
 }
 
 
@@ -3894,7 +3918,7 @@ PRICING
 .pricing-bg2::before {
   position: absolute;
   content: "";
-  background: url(../images/pricing-bg-right.png) no-repeat #092591;
+  background: url(../images/pricing-bg-right.png) no-repeat #afafaf;
   background-size: cover;
   top: 0;
   left: 0;
@@ -3927,7 +3951,7 @@ PRICING
 }
 
 .pricing-text-wrap {
-  color: #fff;
+  color: #000;
   padding: 20px 0 0;
 }
 @media (min-width: 992px) {
@@ -3937,7 +3961,7 @@ PRICING
 }
 .pricing-text-wrap p {
   font-size: 14px;
-  line-height: 2;
+  line-height: 22px;
 }
 .pricing-text-wrap .btn {
   margin: 30px 0 0;
@@ -4060,7 +4084,7 @@ SERVICES 2
   transition: 0.3s;
   margin: 0 0 25px;
   z-index: 1;
-  height: 550px;
+  height: 600px;
 }
 .service-box2:hover {
   background: #38a7de;
@@ -4099,6 +4123,70 @@ SERVICES 2
 }
 
 .service-box2-bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: -1;
+}
+
+
+
+
+/**/
+
+
+.service-box3 {
+  position: relative;
+  text-align: center;
+  background: #f4f6fa;
+  padding: 40px 26px;
+  border: 2px solid #ccc;
+  border-radius: 50px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  margin: 0 0 25px;
+  z-index: 1;
+  height: 340px;
+}
+.service-box3:hover {
+  background: #38a7de;
+  color: #fff;
+  border-color: #38a7de;
+}
+.service-box3:hover .service-box2-img {
+  background: #b73e54;
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+.service-box3:hover a {
+  color: #fff;
+}
+.service-box3 a {
+  text-decoration: underline;
+  font-size: 14px;
+}
+.service-box3 h3 {
+  font-size: 23px;
+  margin: 10px 0 8px;
+  font-weight: 600;
+}
+.service-box3 p {
+  font-size: 14px;
+}
+
+.service-box3-img {
+  background: #fff;
+  padding: 16px;
+  border-radius: 6px;
+  margin: 0 0 16px;
+  -webkit-box-shadow: 0px 8px 20px -14px #38a7de;
+          box-shadow: 0px 8px 20px -14px #38a7de;
+  width: 73px;
+}
+
+.service-box3-bg {
   position: absolute;
   top: 0;
   right: 0;
@@ -4516,6 +4604,11 @@ SERVICE DETAIL
 /*******************Css Personalizado*******************/
 
 /*****Generales*****/
+
+.sombra-1{
+  box-shadow: 0px 0px 24px #6a6666;
+}
+
 a {
   text-decoration: none !important;
 }
@@ -4570,6 +4663,7 @@ a.btn.btn-dark  {
 
 .service-block.blue {
   border-radius: 50px !important;
+  height: 826px !important;
 }
 
 /***Colores sitio web**/
@@ -4904,6 +4998,41 @@ background: #38a7de !important;
 }
 
 
+.principal-service-margin-1{
+  margin-bottom: 262px !important;
+}
+
+.principal-service-margin-2{
+  margin-bottom: 30px !important;
+}
+
+
+.principal-service-margin-3{
+  margin-bottom: 193px !important;
+}
+
+.principal-service-margin-4{
+  margin-bottom: 162px !important;
+}
+
+.principal-service-margin-5{
+  margin-bottom: 222px !important;
+}
+
+.principal-service-margin-6{
+  margin-bottom: 40px !important;
+}
+
+.principal-service-margin-7{
+  margin-bottom: 116px !important;
+}
+
+.principal-service-margin-8{
+  margin-bottom: 30px !important;
+}
+
+
+
 /*********accordiones estilo*****/
 
 
@@ -4944,9 +5073,65 @@ background: #38a7de !important;
 
 
 /***********************medias responsive*************************/
-
+ 
 /*******phone******/
-@media   (max-width: 768px) {
+@media   (max-width: 767px) {
+
+  .pricing-bg2::before {
+
+    height: auto !important;
+  
+}
+
+.why-choose-block::before{
+  height: auto !important;
+}
+
+.why-choose_list-content h3 {
+  font-size: 18px;
+}
+
+
+.pricing-bg::before {
+
+  height: auto !important;
+
+}
+
+
+  .service-box2 {
+ 
+    height: auto !important;
+  }
+
+  .service-box3 {
+ 
+    height: auto !important;
+  }
+
+ 
+  .margin-services-1{
+    margin-bottom: 0px !important;
+  }
+  .margin-services-2{
+    margin-bottom: 0px !important;
+  }
+  .margin-services-3{
+    margin-bottom: 0px !important;
+  }
+  .margin-services-4{
+    margin-bottom: 0px !important;
+  }
+  .margin-services-5 {
+    margin-bottom: 0px !important;
+}
+
+  
+  .service-block.blue {
+    border-radius: 50px !important;
+    height: auto !important;
+  }
+
   .visible-xs{
     display: block !important;
   }
@@ -5022,7 +5207,30 @@ padding-top: 0em;
 
   
 /********** ipad*********/
-  @media   (min-width: 769px) and (max-width: 1250px) {
+  @media   (min-width: 768px) and (max-width: 1250px) {
+
+    .service-block.blue {
+      border-radius: 50px !important;
+      height: 880px !important;
+    }
+  
+
+    .margin-services-1{
+      margin-bottom: 110px !important;
+    }
+    .margin-services-2{
+      margin-bottom: 55px !important;
+    }
+    .margin-services-3{
+      margin-bottom: 75px !important;
+    }
+    .margin-services-4{
+      margin-bottom: 50px !important;
+    }
+    .margin-services-5 {
+      margin-bottom: 82px !important;
+  }
+
     .visible-xs{
       display: block !important;
     }
@@ -5061,3 +5269,117 @@ padding-top: 0em;
  
   }
  
+/****** media altura de servicios******/
+
+
+  @media (min-width: 777px) and (max-width:787px) {
+
+
+    .margin-services-1{
+      margin-bottom: 79px !important;
+    }
+    .margin-services-2{
+      margin-bottom: 55px !important;
+    }
+    .margin-services-3{
+      margin-bottom: 55px !important;
+    }
+    .margin-services-4{
+      margin-bottom: 5px !important;
+    }
+    .margin-services-5 {
+      margin-bottom: 82px !important;
+  }
+  }
+ 
+  @media (max-width:575px) {
+
+
+  .testimonial-wrap3 {
+    position: relative;
+    /*border: 1px solid #38a7de !important;*/
+    padding: 15px;   
+    height: auto;
+    background-color: #fff !important;
+  }
+
+  .principal-service-margin-1{
+    margin-bottom:0px !important;
+  }
+  
+  .principal-service-margin-2{
+    margin-bottom: 0px !important;
+  }
+  
+  
+  .principal-service-margin-3{
+    margin-bottom: 0px !important;
+  }
+  
+  .principal-service-margin-4{
+    margin-bottom: 0px !important;
+  }
+  
+  .principal-service-margin-5{
+    margin-bottom: 0px !important;
+  }
+  
+  .principal-service-margin-6{
+    margin-bottom: 0px !important;
+  }
+  
+  .principal-service-margin-7{
+    margin-bottom: 0px !important;
+  }
+  
+  .principal-service-margin-8{
+    margin-bottom: 0px !important;
+  }
+  }
+
+  @media (min-width: 576px) and (max-width:767px) {
+
+    .testimonial-wrap3 {
+      position: relative;
+      /*border: 1px solid #38a7de !important;*/
+      padding: 15px;
+     
+      height: auto;
+      background-color: #fff !important;
+    }
+  
+
+    .principal-service-margin-1{
+      margin-bottom: 0px !important;
+    }
+    
+    .principal-service-margin-2{
+      margin-bottom: 0px !important;
+    }
+    
+    
+    .principal-service-margin-3{
+      margin-bottom: 0px !important;
+    }
+    
+    .principal-service-margin-4{
+      margin-bottom: 0px !important;
+    }
+    
+    .principal-service-margin-5{
+      margin-bottom: 0px !important;
+    }
+    
+    .principal-service-margin-6{
+      margin-bottom: 0px !important;
+    }
+    
+    .principal-service-margin-7{
+      margin-bottom: 0px !important;
+    }
+    
+    .principal-service-margin-8{
+      margin-bottom: 0px !important;
+    }
+
+  }
