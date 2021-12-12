@@ -1003,6 +1003,10 @@ a:focus {
     height: 600px;
 }
 
+.slick-slide img {
+    display: inline;
+}
+
 .slider-img-text {
     position: relative;
     display: inline-block;
@@ -2493,6 +2497,16 @@ footer {
     transform: rotate(90deg);
 }
 
+.contact-title a {
+    color: #38a7de !important;
+    transition: 0.4s;
+}
+
+.contact-title a:hover {
+    color: #092591 !important;
+    transition: 0.4s;
+}
+
 .foot-link-box {
     margin: 25px 0;
 }
@@ -3019,6 +3033,48 @@ DOCTORS
 }
 
 .emergency-text p {
+    margin: 0;
+}
+
+.emergency2 {
+    padding: 90px 0;
+    background: url(../images/corona-virus-test-3.jpg) no-repeat;
+    background-size: cover;
+}
+
+.emergency-box2 {
+    background: url(../images/emergency-contact-bg.png) no-repeat #3aa7dd;
+    background-size: cover;
+    color: #fff;
+    padding: 40px;
+}
+
+.emergency-box2 p {
+    font-size: 14px;
+}
+
+.emergency-block2 {
+    margin: 25px 0 0;
+}
+
+.emergency-block2 i {
+    font-size: 20px;
+    background: #38a7de;
+    text-align: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 4px;
+    margin: 0 14px 0 0;
+    vertical-align: middle;
+    padding: 11px 0;
+}
+
+.emergency-text2 {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.emergency-text2 p {
     margin: 0;
 }
 
