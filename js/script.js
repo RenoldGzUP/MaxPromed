@@ -44,9 +44,6 @@ $(function() {
         });
     }
 
-
- 
-
     /* ================================================
           Video play button effect
           ================================================ */
@@ -496,60 +493,6 @@ form &&
             });
     });
 
-/*
-
-    var json = JSON.stringify(object);
-    result.innerHTML = "Please wait...";
-
-    fetch("https://api.web3forms.com/submit", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-      },
-      body: json,
-    })
-      .then(async (response) => {
-        if (response.status == 200) {
-          let json = await response.json();
-          result.innerHTML = json.body.message;
-        } else {
-          console.log(response);
-          result.innerHTML = "Something went wrong!";
-        }
-      })
-      .catch((error) => {
-        console.log(error);
-        result.innerHTML = "Something went wrong!";
-      })
-      .then(function () {
-        form.reset();
-        setTimeout(() => {
-          result.style.display = "none";
-        }, 5000);
-      });
-  });*/
-
-/* ================================================
-      Fixed menu
-      ================================================ */
-
-
-  jQuery(document).ready(function( $ ) {
-    $(window).scroll(function(){
-      var scroll = jQuery(window).scrollTop();
-      if (scroll >= 500) {
-        $("#fixedmenu").addClass("fixed-top  p3 p1-xs pt0 pb0 css-bg-blanco sombra-style slow-effect");
-      }
-  
-      else{
-      $("#fixedmenu").removeClass("fixed-top p3 p1-xs pt0-xs pb0-xs pt0 pb0  css-bg-blanco sombra-style");  	
-      }
-    });
-  });
-  
-
-
 
 /* ================================================
     Change Specific Hour and update status
@@ -567,7 +510,33 @@ function getTestHour() {
 
     //SetDate
     document.getElementById("spanDateStatus").textContent = dataTestDate;
+}
 
+function getTestingCode() {
+    var testingCode = document.getElementById("inputTestingLocation").value;
+    var testingDate = document.getElementById("inputTestingDate").value;
+    var testingHour = document.getElementById("inputTestingHour");
+
+
+    console.log("Testing ->" + testingCode);
+
+    $.ajax({
+        data: {
+            "testingCode": testingCode,
+            "testingDate": testingDate,
+
+        },
+        type: "POST",
+        dataType: "text",
+        url: "./php/getLocationSchedule.php",
+    }).done(function(data, textStatus, jqXHR) {
+        //console.log("DATA-> " + data);
+        //const jsonData = JSON.parse(data);
+        // console.log("JSON -> " + jsonData[5]);
+        testingHour.innerHTML = data;
+    }).fail(function(jqXHR, textStatus, errorThrown) {
+        console.log("Request FAIL!  " + textStatus);
+    });
 
 
 }
@@ -588,8 +557,9 @@ function requestDataTime(hour, date, location) {
         url: "./php/getDataHour.php",
     }).done(function(data, textStatus, jqXHR) {
         console.log("DATA-> " + data);
+
     }).fail(function(jqXHR, textStatus, errorThrown) {
-        console.log("La solicitud a fallado: " + textStatus);
+        console.log("Request FAIL!  " + textStatus);
     });
 
 }
@@ -602,4 +572,8 @@ function getSpecificHour() {
 
     console.log(dataTestHour);
 
+    >>>
+    >>>
+    >
+    main
 }

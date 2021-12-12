@@ -71,6 +71,50 @@ function newAppointment($AP_REGISTER,$NAME,$LASTNAME,$GENDER,$BIRTHDATE,$EMAIL,$
 
 }
 
+function getLocationHour($CODE,$QUERY){
+
+    global $mysqli;
+    $query      = new Query($mysqli, "SELECT ".$QUERY." from schedule where sc_location_id = ?");
+    $parametros = array('s', &$CODE);
+    $data       = $query->getresults( $parametros);
+    if (isset($data[0])) {
+        return $data;
+    } else {
+        return null;
+    }  
+}
+
+
+function getLocationName($CODE){
+
+    global $mysqli;
+    $query      = new Query($mysqli, "SELECT sc_large_name from schedule where sc_location_id = ? limit 1");
+    $parametros = array('s', &$CODE);
+    $data       = $query->getresults( $parametros);
+    if (isset($data[0])) {
+        return $data;
+    } else {
+        return null;
+    }  
+}
+
+function getBusyHour($LOCATION,$DATE,$HOUR,$HOURFINISH){
+
+    global $mysqli;
+    $query      = new Query($mysqli, "SELECT ap_test_hour_specific from appointment where  ap_test_location = ?  and ap_test_date = ? and ap_test_hour_specific between ? and ? order by ap_test_hour_specific asc");
+    $parametros = array('ssss', &$LOCATION,&$DATE,&$HOUR,&$HOURFINISH);
+    $data       = $query->getresults( $parametros);
+    if (isset($data[0])) {
+        return $data;
+    } else {
+        return null;
+    }  
+}
+
+
+
+
+
 /////////////////////////////////////////////////////////////////////////////////////////////
 
 
@@ -88,6 +132,22 @@ function LogSystem($data){
     fclose($file);
 
 }
+
+
+//
+function convert_object_to_array($data) {
+    if (is_object($data)) {
+        $data = get_object_vars($data);
+    }
+  
+    if (is_array($data)) {
+        return array_map(__FUNCTION__, $data);
+    }
+    else {
+        return $data;
+    }
+  }
+  
 
 
 
