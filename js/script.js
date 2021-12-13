@@ -44,9 +44,6 @@ $(function() {
         });
     }
 
-
- 
-
     /* ================================================
           Video play button effect
           ================================================ */
@@ -583,7 +580,33 @@ function getTestHour() {
 
     //SetDate
     document.getElementById("spanDateStatus").textContent = dataTestDate;
+}
 
+function getTestingCode() {
+    var testingCode = document.getElementById("inputTestingLocation").value;
+    var testingDate = document.getElementById("inputTestingDate").value;
+    var testingHour = document.getElementById("inputTestingHour");
+
+
+    console.log("Testing ->" + testingCode);
+
+    $.ajax({
+        data: {
+            "testingCode": testingCode,
+            "testingDate": testingDate,
+
+        },
+        type: "POST",
+        dataType: "text",
+        url: "./php/getLocationSchedule.php",
+    }).done(function(data, textStatus, jqXHR) {
+        //console.log("DATA-> " + data);
+        //const jsonData = JSON.parse(data);
+        // console.log("JSON -> " + jsonData[5]);
+        testingHour.innerHTML = data;
+    }).fail(function(jqXHR, textStatus, errorThrown) {
+        console.log("Request FAIL!  " + textStatus);
+    });
 
 
 }
@@ -591,6 +614,8 @@ function getTestHour() {
 //Consulta AJAX  a la base de de datos
 
 function requestDataTime(hour, date, location) {
+
+    var testHourAv = document.getElementById("inputTestStatus");
 
 
     $.ajax({
@@ -604,8 +629,10 @@ function requestDataTime(hour, date, location) {
         url: "./php/getDataHour.php",
     }).done(function(data, textStatus, jqXHR) {
         console.log("DATA-> " + data);
+        testHourAv.innerHTML = data;
+
     }).fail(function(jqXHR, textStatus, errorThrown) {
-        console.log("La solicitud a fallado: " + textStatus);
+        console.log("Request FAIL!  " + textStatus);
     });
 
 }
