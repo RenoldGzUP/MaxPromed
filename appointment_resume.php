@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="zxx">
+<html lang="nl">
 
 <head>
     <!-- Required meta tags -->
@@ -36,17 +36,17 @@
                             <div class="col-md-9 d-flex align-items-end">
                                 <ul class="ml-auto">
                                     <li>
-                                        <img src="images/mail-icon.png" alt="#">
+                                        <img src="images/logo-maxpromed.png" alt="#">
                                         <div>
                                             <span>Mail us</span>
-                                            <h4>info@medenin</h4>
+                                            <h4>info@maxpromed.com</h4>
                                         </div>
                                     </li>
                                     <li>
                                         <img src="images/call-icon.png" alt="#">
                                         <div>
                                             <span>Toll Free</span>
-                                            <h4>+123 456 7890</h4>
+                                            <h4>+31 646626613</h4>
                                         </div>
                                     </li>
                                 </ul>
@@ -192,6 +192,7 @@
     </section>
     <!--//End Sub header -->
     <!--//End Header -->
+
     <!--==================== News ====================-->
     <section class="space">
         <div class="container container-custom">
@@ -206,33 +207,28 @@
                             </div>
                             <div class="card-body">
 
+                            <?php
+                                            include './php/showReservation.php';
+                                ?>
+
+                            <!--
                                 <div class="row">
-                                    <div class="col-md-4" style="margin-top: 10px;">
-                                        <label>Name</label>
-                                        <input type="text" class="form-control" id="inputResidence" placeholder="Add">
+
+                                    <div class="col-md-12">
+                                        <div class="alert alert-success" role="alert">
+                                            Afspraak gemaakt, dit is de informatie!
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-md-6" style="margin-top: 10px;">
+                                        <label>Officiele naam</label>
+                                        <input type="text" class="form-control" id="inputResidence" placeholder="" readonly>
 
                                     </div>
-                                    <div class="col-md-4" style="margin-top: 10px;">
-                                        <label>Email</label>
-                                        <input type="text" class="form-control" id="inputResidence" placeholder="Add">
-
-                                    </div>
-                                    <div class="col-md-4" style="margin-top: 10px;">
-                                        <label>Phone Number</label>
-                                        <input type="text" class="form-control" id="inputResidence" placeholder="Add">
-                                    </div>
-                                </div>
-
-
-                                <div class="row" style="margin-top: 5px;">
-                                    <div class="col-md-4" style="margin-top: 10px;">
-                                        <label>Residence</label>
-                                        <input type="text" class="form-control" id="inputResidence" placeholder="Add">
-
-                                    </div>
-                                    <div class="col-md-4" style="margin-top: 10px;">
-                                        <label>Birthdate</label>
-                                        <input type="text" class="form-control" id="inputResidence" placeholder="Add">
+                                    <div class="col-md-6" style="margin-top: 10px;">
+                                        <label>Registratiecode</label>
+                                        <input type="text" class="form-control" id="inputResidence" placeholder="" readonly>
 
                                     </div>
 
@@ -241,33 +237,31 @@
                                 <div class="row" style="margin-top: 5px;">
 
                                     <div class="col-md-12" style="margin-top: 10px;">
-                                        <h5>Test Information</h5>
-
+                                        <h5>Covid Test Information</h5>
 
                                     </div>
 
-
-
-
                                     <div class="col-md-3" style="margin-top: 10px;">
-                                        <label>Test Date</label>
-                                        <input type="text" class="form-control" id="inputResidence" placeholder="Add">
+                                        <label>Keuze testtype</label>
+                                        <input type="text" class="form-control" id="inputResidence" readonly>
 
                                     </div>
                                     <div class="col-md-3" style="margin-top: 10px;">
-                                        <label>Test Type</label>
-                                        <input type="text" class="form-control" id="inputResidence" placeholder="Add">
+                                        <label>Locatie</label>
+                                        <input type="text" class="form-control" id="inputResidence" readonly>
 
                                     </div>
                                     <div class="col-md-3" style="margin-top: 10px;">
-                                        <label>Test Location </label>
-                                        <input type="text" class="form-control" id="inputResidence" placeholder="Add">
+                                        <label>Datum</label>
+                                        <input type="text" class="form-control" id="inputResidence" readonly>
                                     </div>
                                     <div class="col-md-3" style="margin-top: 10px;">
-                                        <label>Test Hour </label>
-                                        <input type="text" class="form-control" id="inputResidence" placeholder="Add">
+                                        <label>Time of day</label>
+                                        <input type="text" class="form-control" id="inputResidence" readonly>
                                     </div>
                                 </div>
+-->
+
                                 <br>
 
                                 <p class="card-text">Add some indications about time and another details</p>
@@ -282,7 +276,10 @@
         </div>
     </section>
     <!--//End News -->
+
+
     <!--==================== Appointment ====================-->
+    <!--
     <section class="space background-bg4">
         <div class="container container-custom">
             <div class="row">
@@ -392,8 +389,11 @@
             </div>
         </div>
     </section>
+-->
     <!--//End Appointment -->
+
     <!--==================== Testimonials ====================-->
+    <!--
     <section class="space">
         <div class="container container-custom">
             <div class="col-md-12">
@@ -474,7 +474,10 @@
             </div>
         </div>
     </section>
+-->
     <!--//End Testimonials -->
+
+
     <!--==================== Counter ====================-->
     <section class="counter">
         <div class="container container-custom">
@@ -508,7 +511,7 @@
                 </div>
                 <div class="col-sm-12 col-md-3 col-lg-3 d-flex align-items-center justify-content-end">
                     <div class="counter-btn_block">
-                        <a href="#" class="btn btn-success">BOOK NOW</a>
+                        <a href="appointment.html" class="btn btn-success">Afspraak maken</a>
                     </div>
                 </div>
             </div>
@@ -526,10 +529,10 @@
                             Lorem ipsum dolor sit amet, consect <br /> etur adipisicing elit, sed do eius mod <br /> tempor incididunt ut labore et dolore<br /> magna aliqua. Ut enim ad minim
                         </p>
                         <a href="tel:31234567890">
-                            <h4><i class="fas fa-phone"></i>3123 456 7890</h4>
+                            <h4><i class="fas fa-phone"></i>+31 646626613</h4>
                         </a>
                         <a href="mailto:info@mededin.com">
-                            <h4><i class="far fa-envelope"></i>info@mededin.com</h4>
+                            <h4><i class="far fa-envelope"></i>info@maxpromed.com</h4>
                         </a>
                     </div>
                 </div>

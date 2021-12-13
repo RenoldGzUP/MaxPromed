@@ -61,11 +61,11 @@ class Query
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////
 
-function newAppointment($AP_REGISTER,$NAME,$LASTNAME,$GENDER,$BIRTHDATE,$EMAIL,$PHONE,$STREET1,$STREET2,$PLACE,$PROVINCE,$POSTCODE,$COUNTRY,$ID_METHOD,$BSN,$DOC_NUMBER,$CARDINALITY,$TEST_TYPE,$TEST_LOCATION,$TEST_DATE,$TEST_HOUR,$TEST_HOUR_SPE,$CONSENT){
+function newAppointment($AP_REGISTER,$NAME,$LASTNAME,$GENDER,$BIRTHDATE,$EMAIL,$PHONE,$STREET1,$STREET2,$PLACE,$PROVINCE,$POSTCODE,$COUNTRY,$ID_METHOD,$BSN,$DOC_NUMBER,$CARDINALITY,$TEST_TYPE,$TEST_LOCATION,$TEST_DATE,$TEST_HOUR,$TEST_HOUR_SPE,$HOUR_STATUS,$CONSENT){
 
     global $mysqli;
-    $query      = new Query($mysqli, "INSERT into appointment(ap_meet_register,ap_name,ap_lastname,ap_gender,ap_birthdate,ap_email,ap_cellphone,ap_street_name ,ap_second_addres ,ap_place,ap_province,ap_postcode ,ap_country ,ap_id_method ,ap_bsn_number ,ap_doc_number,ap_cardinality ,ap_test_type,ap_test_location,ap_test_date,ap_test_hour,ap_test_hour_specific,ap_consent) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
-    $parametros = array('sssssssssssssssssssssss', &$AP_REGISTER,&$NAME,&$LASTNAME,&$GENDER,&$BIRTHDATE,&$EMAIL,&$PHONE,&$STREET1,&$STREET2,&$PLACE,&$PROVINCE,&$POSTCODE,&$COUNTRY,&$ID_METHOD,&$BSN,&$DOC_NUMBER,&$CARDINALITY,&$TEST_TYPE,&$TEST_LOCATION,&$TEST_DATE,&$TEST_HOUR,&$TEST_HOUR_SPE,&$CONSENT);
+    $query      = new Query($mysqli, "INSERT into appointment(ap_meet_register,ap_name,ap_lastname,ap_gender,ap_birthdate,ap_email,ap_cellphone,ap_street_name ,ap_second_addres ,ap_place,ap_province,ap_postcode ,ap_country ,ap_id_method ,ap_bsn_number ,ap_doc_number,ap_cardinality ,ap_test_type,ap_test_location,ap_test_date,ap_test_hour,ap_test_hour_specific,ap_time_status,ap_consent) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
+    $parametros = array('ssssssssssssssssssssssss', &$AP_REGISTER,&$NAME,&$LASTNAME,&$GENDER,&$BIRTHDATE,&$EMAIL,&$PHONE,&$STREET1,&$STREET2,&$PLACE,&$PROVINCE,&$POSTCODE,&$COUNTRY,&$ID_METHOD,&$BSN,&$DOC_NUMBER,&$CARDINALITY,&$TEST_TYPE,&$TEST_LOCATION,&$TEST_DATE,&$TEST_HOUR,&$TEST_HOUR_SPE,&$HOUR_STATUS,&$CONSENT);
     $data       = $query->getresults($parametros);
     return true;
 
@@ -74,7 +74,7 @@ function newAppointment($AP_REGISTER,$NAME,$LASTNAME,$GENDER,$BIRTHDATE,$EMAIL,$
 function getLocationHour($CODE,$QUERY){
 
     global $mysqli;
-    $query      = new Query($mysqli, "SELECT ".$QUERY." from schedule where sc_location_id = ?");
+    $query      = new Query($mysqli, "SELECT ".$QUERY." from schedule where sc_large_name = ?");
     $parametros = array('s', &$CODE);
     $data       = $query->getresults( $parametros);
     if (isset($data[0])) {
@@ -101,7 +101,7 @@ function getLocationName($CODE){
 function getBusyHour($LOCATION,$DATE,$HOUR,$HOURFINISH){
 
     global $mysqli;
-    $query      = new Query($mysqli, "SELECT ap_test_hour_specific from appointment where  ap_test_location = ?  and ap_test_date = ? and ap_test_hour_specific between ? and ? order by ap_test_hour_specific asc");
+    $query      = new Query($mysqli, "SELECT ap_test_hour_specific,ap_time_status  from appointment where  ap_test_location = ?  and ap_test_date = ? and ap_test_hour_specific between ? and ? order by ap_test_hour_specific asc");
     $parametros = array('ssss', &$LOCATION,&$DATE,&$HOUR,&$HOURFINISH);
     $data       = $query->getresults( $parametros);
     if (isset($data[0])) {
@@ -110,6 +110,25 @@ function getBusyHour($LOCATION,$DATE,$HOUR,$HOURFINISH){
         return null;
     }  
 }
+
+
+function getReservation($RESERVATION){
+
+    global $mysqli;
+    $query      = new Query($mysqli, "SELECT concat(ap_name,' ',ap_lastname) as completedName,ap_meet_register ,ap_test_type ,ap_test_location,ap_test_date ,ap_test_hour_specific from appointment where  ap_meet_register = ?");
+    $parametros = array('s', &$RESERVATION);
+    $data       = $query->getresults( $parametros);
+    if (isset($data[0])) {
+        return $data;
+    } else {
+        return null;
+    }  
+}
+
+
+
+
+//select concat(ap_name," ",ap_lastname) as completeName,ap_meet_register ,ap_test_type ,ap_test_location,ap_test_date ,ap_test_hour_specific from appointment
 
 
 

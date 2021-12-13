@@ -545,6 +545,8 @@ function getTestingCode() {
 
 function requestDataTime(hour, date, location) {
 
+    var testHourAv = document.getElementById("inputTestStatus");
+
 
     $.ajax({
         data: {
@@ -557,6 +559,7 @@ function requestDataTime(hour, date, location) {
         url: "./php/getDataHour.php",
     }).done(function(data, textStatus, jqXHR) {
         console.log("DATA-> " + data);
+        testHourAv.innerHTML = data;
 
     }).fail(function(jqXHR, textStatus, errorThrown) {
         console.log("Request FAIL!  " + textStatus);
@@ -572,8 +575,4 @@ function getSpecificHour() {
 
     console.log(dataTestHour);
 
-    >>>
-    >>>
-    >
-    main
 }

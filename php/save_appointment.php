@@ -31,7 +31,7 @@ $TestHourAvailable = $_POST["max_test_hour_av"];
 $Consent = $_POST["max_consent"];
 
 
-var_dump($Gender);
+var_dump($TestLocation);
 
 //New request id
 $code = rand(9999,999999);
@@ -40,12 +40,12 @@ var_dump($ApCode);
 
 
 //Save Data in DB
-$request = newAppointment($ApCode,$Name, $LastName,$Gender,$Birthdate,$Email, $Phone,$Street,$SecAddress,$Place,$Province,$Postcode,$Country,$Idmethod,$BSNnumber,$Docnumber,$Voor,$TestType,$TestLocation,$TestDate,$TestHourWhole,$TestHourAvailable,$Consent);
+$request = newAppointment($ApCode,$Name, $LastName,$Gender,$Birthdate,$Email, $Phone,$Street,$SecAddress,$Place,$Province,$Postcode,$Country,$Idmethod,$BSNnumber,$Docnumber,$Voor,$TestType,$TestLocation,$TestDate,$TestHourWhole,$TestHourAvailable,1,$Consent);
 
 
 if($request){   
-  //header("Location:../appointment_resume.html");
-  echo "register";
+  header("Location:../appointment_resume.php?res=".base64_encode($ApCode));
+  //echo "register";
 
 }else{
     //echo "Ocurrio un error";
