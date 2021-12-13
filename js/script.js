@@ -493,7 +493,77 @@ form &&
             });
     });
 
+/*
 
+    var json = JSON.stringify(object);
+    result.innerHTML = "Please wait...";
+
+    fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: json,
+    })
+      .then(async (response) => {
+        if (response.status == 200) {
+          let json = await response.json();
+          result.innerHTML = json.body.message;
+        } else {
+          console.log(response);
+          result.innerHTML = "Something went wrong!";
+        }
+      })
+      .catch((error) => {
+        console.log(error);
+        result.innerHTML = "Something went wrong!";
+      })
+      .then(function () {
+        form.reset();
+        setTimeout(() => {
+          result.style.display = "none";
+        }, 5000);
+      });
+  });*/
+
+/* ================================================
+      Fixed menu
+      ================================================ */
+
+
+  jQuery(document).ready(function( $ ) {
+    $(window).scroll(function(){
+      var scroll = jQuery(window).scrollTop();
+      if (scroll >= 500) {
+        $("#fixedmenu").addClass("fixed-top  p3 p1-xs pt0 pb0 css-bg-blanco sombra-style slow-effect");
+      }
+  
+      else{
+      $("#fixedmenu").removeClass("fixed-top p3 p1-xs pt0-xs pb0-xs pt0 pb0  css-bg-blanco sombra-style");  	
+      }
+    });
+  });
+  
+/* ================================================
+      Slow id movement
+      ================================================ */
+ 
+
+  $(document).ready(function() {
+    $('a[href^="#"]').click(function() {
+      var destino = $(this.hash);
+      if (destino.length == 0) {
+        destino = $('a[name="' + this.hash.substr(1) + '"]');
+      }
+      if (destino.length == 0) {
+        destino = $('html');
+      }
+      $('html, body').animate({ scrollTop: destino.offset().top }, 1000);
+      return false;
+    });
+  });
+ 
 /* ================================================
     Change Specific Hour and update status
     ================================================ */

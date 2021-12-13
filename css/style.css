@@ -498,10 +498,9 @@ h3,
     font-size: 20px;
 }
 
-h4,
-.h4 {
-    font-size: 19px;
-    font-weight: 700;
+h4, .h4 {
+  font-size: 17px  ;
+ 
 }
 
 p {
@@ -546,10 +545,16 @@ a:focus {
 
 
 /* --------- Header --------- */
-
 .banner--wrap {
-    background: url(../images/banner-bg.jpg) center no-repeat;
-    background-size: cover;
+  background: url(../images/banner-bg.jpg) center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.banner--wrap2 {
+  background: linear-gradient(#ffffff,#ffffffad, #ffffff7a, #ffffffdb), url(../images/covid-test-street.jpg) center no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 .banner:focus {
@@ -1427,8 +1432,9 @@ a:focus {
 }
 
 .about-form {
-    background: url(../images/bg-home-form.jpg) no-repeat;
-    background-size: cover;
+  background: url(../images/bg-home-form.jpg) no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .about-form p {
@@ -1440,9 +1446,22 @@ a:focus {
     background: #38a7de;
 }
 
-.about-form a {
-    border-radius: 8px;
-    font-size: 13px;
+
+.about-form2 {
+  background: url(../images/bg-home-form.jpg) no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.about-form2 p {
+   
+  font-size: 14px;
+}
+.about-form2 .dental-features_list i {
+  background: #38a7de;
+}
+.about-form2 a {
+  border-radius: 8px;
+  font-size: 13px;
 }
 
 .booking-form-style2 {
@@ -2512,9 +2531,9 @@ footer {
 }
 
 @media (min-width: 768px) {
-    .foot-link-box {
-        margin: 90px 0;
-    }
+  .foot-link-box {
+    margin: 60px 0;
+  }
 }
 
 .foot-link-box h4 {
@@ -2589,15 +2608,15 @@ footer {
 }
 
 #scroll {
-    float: right;
-    background: #092591;
-    border-radius: 50%;
-    width: 35px;
-    height: 35px;
-    text-align: center;
-    -webkit-transition: 0.3s;
-    -o-transition: 0.3s;
-    transition: 0.3s;
+  float: right;
+  background: #38a7de;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
 }
 
 #scroll:hover {
@@ -2608,9 +2627,9 @@ footer {
 }
 
 #scroll i {
-    padding: 11px 0;
-    color: #000;
-    font-size: 12px;
+  padding: 11px 0;
+  color: #fff;
+  font-size: 12px;
 }
 
 
@@ -4827,6 +4846,82 @@ SERVICE DETAIL
 
 /*******************Css Personalizado*******************/
 
+/*****Generales*****/
+/*
+.appointment-style{
+  border: 3px solid #00a9e1;
+  padding: 30px;
+  background: url(/MaxPromed/images/banner-bg.jpg);
+  background-attachment: fixed;
+  border-radius: 40px;
+  background-position: center;
+  background-repeat: no-repeat;
+}*/
+
+
+.services-2-btn{
+
+  position: absolute;
+  top: 88%;
+  width: 80%;
+  left: 11%;
+
+}
+
+.copyright  a{
+
+ 
+  color: #00a9e1;
+}
+
+.copyright  a:hover{
+  color: #fff;
+}
+
+.foot-link-box li a {
+  font-size: 19px !important;
+  line-height: 39px !important;
+}
+
+.foot-link-box h4 {
+ font-size: 30px;
+}
+
+
+.appointment-style{
+  padding: 30px;
+  background: #ffffffe0;
+  background-attachment: fixed;
+  border-radius: 40px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+
+.row-appointment-background{
+  background: linear-gradient(#ffffff1a, #f1f1f133), url(/maxpromed/images/covid-test-location.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+ 
+
+
+
+.appointment-style button, .appointment-style input, .appointment-style optgroup, .appointment-style select, .appointment-style textarea {
+  margin: 0;
+  font-family: inherit;
+  color: #000 !important;
+  font-size: inherit;
+  line-height: inherit;
+  border: 2px solid #00a9e1 !important;
+  background: #c5f0ff !important;
+  border-radius: 20px !important;
+}
+
 
 /*****Generales*****/
 
@@ -5002,8 +5097,46 @@ a.btn.btn-dark {
     margin-bottom: 4em;
 }
 
-.mt5 {
-    margin-top: 5em;
+
+
+ 
+
+/******* altura de los servicios*****/
+
+/*
+.margin-services-1{
+  margin-bottom: 79px !important;
+}
+.margin-services-2{
+  margin-bottom: 55px !important;
+}
+.margin-services-3{
+  margin-bottom: 55px !important;
+}
+.margin-services-4{
+  margin-bottom: 5px !important;
+}
+.margin-services-5{
+  margin-bottom: 55px !important;
+}*/
+
+.btn-services-style{
+  position: absolute;
+  top: 88%;
+  width: 80%;
+  left: 11%;
+}
+
+.btn-services-style2{
+  position: absolute;
+  top: 80%;
+  width: 80%;
+  left: 11%;
+}
+/*
+
+.principal-service-margin-1{
+  margin-bottom: 262px !important;
 }
 
 .mb5 {
@@ -5034,8 +5167,15 @@ a.btn.btn-dark {
     padding-bottom: 3em;
 }
 
-.pt4 {
-    padding-top: 4em;
+*/
+
+/*********accordiones estilo*****/
+
+
+.accordion>.card>.card-header {
+ 
+  background: #00a9e1 !important;
+  border-bottom: 5px solid #fff;
 }
 
 .pb4 {
@@ -5050,6 +5190,17 @@ a.btn.btn-dark {
     padding-bottom: 5em;
 }
 
+.appointment-style .card {
+ 
+  background: transparent !important;
+ 
+ 
+}
+
+.card-body {
+  background: transparent !important;
+
+}
 
 /******* altura de los servicios*****/
 
@@ -5069,12 +5220,75 @@ a.btn.btn-dark {
     margin-bottom: 5px !important;
 }
 
-.margin-services-5 {
-    margin-bottom: 55px !important;
+
+
+.pricing-bg::before {
+
+  height: auto !important;
+
 }
 
 
-/*************** Selectable Option *******************/
+  .service-box2 {
+ 
+    height: auto !important;
+  }
+
+  .service-box3 {
+ 
+    height: auto !important;
+  }
+
+ /*
+  .margin-services-1{
+    margin-bottom: 0px !important;
+  }
+  .margin-services-2{
+    margin-bottom: 0px !important;
+  }
+  .margin-services-3{
+    margin-bottom: 0px !important;
+  }
+  .margin-services-4{
+    margin-bottom: 0px !important;
+  }
+  .margin-services-5 {
+    margin-bottom: 0px !important;
+}*/
+
+  
+ 
+  .visible-xs{
+    display: block !important;
+  }
+
+  .hidden-xs{
+    display: none !important;
+  }
+
+  .mt2-xs{
+    margin-top: 2em;
+  }
+
+  .text-center-xs{
+text-align: center !important;
+  }
+
+  .mt1-xs{
+    margin-top: 1em !important;
+  }
+
+  .p1-xs{
+    padding: 1em !important;
+  }
+
+  .pt0-xs {
+padding-top: 0em;
+  }
+
+  .pb0-xs{
+    padding-bottom: 0em;
+}
 
 .optionBusy {
     font-weight: bold !important;
@@ -5090,11 +5304,320 @@ a.btn.btn-dark {
     text-transform: uppercase;
 }
 
-div.ex3 {
-    background-color: rgb(255, 255, 255);
-    width: auto;
-    height: 160px;
-    overflow: auto;
-    text-align: justify;
-    text-justify: inter-word;
-}
+
+
+  
+
+  
+/********** ipad*********/
+  @media   (min-width: 768px) and (max-width: 1250px) {
+
+
+
+
+    .service-block.blue {
+      border-radius: 50px !important;
+      height: 820px !important;
+    }
+  
+/*
+    .margin-services-1{
+      margin-bottom: 110px !important;
+    }
+    .margin-services-2{
+      margin-bottom: 55px !important;
+    }
+    .margin-services-3{
+      margin-bottom: 75px !important;
+    }
+    .margin-services-4{
+      margin-bottom: 50px !important;
+    }
+    .margin-services-5 {
+      margin-bottom: 82px !important;
+  }*/
+
+    .visible-xs{
+      display: block !important;
+    }
+  
+    .hidden-xs{
+      display: none !important;
+    }
+
+    .mt1-xs{
+      margin-top: 1em !important;
+    }
+    .contact-title_icon {
+      display: block;
+      vertical-align: top;
+      margin: 0 0 0 0px;
+    }
+
+    /*
+
+    .principal-service-margin-1{
+      margin-bottom: 262px !important;
+    }
+    
+    .principal-service-margin-2{
+      margin-bottom: 60px !important;
+    }
+    
+    
+    .principal-service-margin-3{
+      margin-bottom: 220px !important;
+    }
+    
+    .principal-service-margin-4{
+      margin-bottom: 180px !important;
+    }
+    
+    .principal-service-margin-5{
+      margin-bottom: 222px !important;
+    }
+    
+    .principal-service-margin-6{
+      margin-bottom: 120px !important;
+    }
+    
+    .principal-service-margin-7{
+      margin-bottom: 210px !important;
+    }
+    
+    .principal-service-margin-8{
+      margin-bottom: 100px !important;
+    }
+    
+    */
+  
+  
+  }
+
+  /*********laptop****
+
+  @media (min-width: 992px) and (max-width: 1200px) {
+    .visible-xs{
+      display: none !important;
+    }
+  }
+**/
+
+  /********* desktop******/
+
+  @media (min-width: 1251px)   {
+    .visible-xs{
+      display: none !important;
+    }
+ 
+  }
+ 
+/****** media altura de servicios******/
+
+
+  @media (min-width: 777px) and (max-width:787px) {
+/*
+
+    .margin-services-1{
+      margin-bottom: 79px !important;
+    }
+    .margin-services-2{
+      margin-bottom: 55px !important;
+    }
+    .margin-services-3{
+      margin-bottom: 55px !important;
+    }
+    .margin-services-4{
+      margin-bottom: 5px !important;
+    }
+    .margin-services-5 {
+      margin-bottom: 82px !important;
+  }*/
+  }
+ 
+  @media  (max-width:399px){
+    .testimonial-wrap3 {
+      position: relative;
+      /*border: 1px solid #38a7de !important;*/
+      padding: 15px;   
+      height: 800px;
+      background-color: #fff !important;
+    }
+  
+  }
+  @media (min-width: 400px) and (max-width:464px) {
+
+
+  .testimonial-wrap3 {
+    position: relative;
+    /*border: 1px solid #38a7de !important;*/
+    padding: 15px;   
+    height: 730px;
+    background-color: #fff !important;
+  }
+/*
+  .principal-service-margin-1{
+    margin-bottom:0px !important;
+  }
+  
+  .principal-service-margin-2{
+    margin-bottom: 0px !important;
+  }
+  
+  
+  .principal-service-margin-3{
+    margin-bottom: 0px !important;
+  }
+  
+  .principal-service-margin-4{
+    margin-bottom: 0px !important;
+  }
+  
+  .principal-service-margin-5{
+    margin-bottom: 0px !important;
+  }
+  
+  .principal-service-margin-6{
+    margin-bottom: 0px !important;
+  }
+  
+  .principal-service-margin-7{
+    margin-bottom: 0px !important;
+  }
+  
+  .principal-service-margin-8{
+    margin-bottom: 0px !important;
+  }*/
+  }
+
+  @media (min-width: 465px) and (max-width:575px) {
+
+    .testimonial-wrap3 {
+      position: relative;
+      /*border: 1px solid #38a7de !important;*/
+      padding: 15px;
+     
+      height: 700px;
+      background-color: #fff !important;
+    }
+  }
+
+
+  @media (min-width: 576px) and (max-width:656px) {
+
+    .testimonial-wrap3 {
+      position: relative;
+      /*border: 1px solid #38a7de !important;*/
+      padding: 15px;
+     
+      height: 950px;
+      background-color: #fff !important;
+    }
+  /*
+
+    .principal-service-margin-1{
+      margin-bottom: 0px !important;
+    }
+    
+    .principal-service-margin-2{
+      margin-bottom: 0px !important;
+    }
+    
+    
+    .principal-service-margin-3{
+      margin-bottom: 0px !important;
+    }
+    
+    .principal-service-margin-4{
+      margin-bottom: 0px !important;
+    }
+    
+    .principal-service-margin-5{
+      margin-bottom: 0px !important;
+    }
+    
+    .principal-service-margin-6{
+      margin-bottom: 0px !important;
+    }
+    
+    .principal-service-margin-7{
+      margin-bottom: 0px !important;
+    }
+    
+    .principal-service-margin-8{
+      margin-bottom: 0px !important;
+    }*/
+
+  } 
+
+
+  @media (min-width: 657px) and (max-width:767px){
+    .testimonial-wrap3 {
+      position: relative;
+      /*border: 1px solid #38a7de !important;*/
+      padding: 15px;
+     
+      height: 820px;
+      background-color: #fff !important;
+    }
+
+  }
+
+
+  @media (min-width: 768px) and (max-width:900px){
+    .testimonial-wrap3 {
+      position: relative;
+      /*border: 1px solid #38a7de !important;*/
+      padding: 15px;
+     
+      height: 750px;
+      background-color: #fff !important;
+    }
+
+  }
+
+
+  
+  @media (min-width: 901px) and (max-width:1250px){
+    .testimonial-wrap3 {
+      position: relative;
+      /*border: 1px solid #38a7de !important;*/
+      padding: 15px;
+     
+      height: 700px;
+      background-color: #fff !important;
+    }
+
+  }
+
+
+  @media (min-width: 701px) and (max-width:1250px){
+    .service-block.blue {
+      border-radius: 50px !important;
+      height: 820px !important;
+    }
+  }
+
+  @media  (max-width:700px){
+    .service-block.blue {
+      border-radius: 50px !important;
+      height: 910px !important;
+    }
+  }
+
+
+
+  @media (min-width: 363px) and  (max-width:575px){
+    .service-block.blue {
+      border-radius: 50px !important;
+      height: 810px !important;
+    }
+  }
+
+  @media    (max-width:362px){
+    .service-block.blue {
+      border-radius: 50px !important;
+      height: 900px !important;
+    }
+  }
+
