@@ -473,7 +473,7 @@ h3, .h3 {
 }
 
 h4, .h4 {
-  font-size: 19px  ;
+  font-size: 17px  ;
  
 }
 
@@ -520,10 +520,12 @@ a:focus {
 .banner--wrap {
   background: url(../images/banner-bg.jpg) center no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .banner--wrap2 {
-  background: linear-gradient(#ffffff,#ffffffad, #ffffff7a, #ffffffdb), url(../images/home-pic-1.jpg) center no-repeat;
+  background: linear-gradient(#ffffff,#ffffffad, #ffffff7a, #ffffffdb), url(../images/covid-test-street.jpg) center no-repeat;
+  background-attachment: fixed;
   background-size: cover;
 }
 
@@ -1326,6 +1328,7 @@ a:focus {
 .about-form {
   background: url(../images/bg-home-form.jpg) no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 .about-form p {
   font-weight: 300;
@@ -1360,6 +1363,7 @@ a:focus {
 .about-form2 {
   background: url(../images/bg-home-form.jpg) no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 .about-form2 p {
    
@@ -2502,7 +2506,7 @@ footer {
 }
 @media (min-width: 768px) {
   .foot-link-box {
-    margin: 90px 0;
+    margin: 60px 0;
   }
 }
 .foot-link-box h4 {
@@ -2569,7 +2573,7 @@ footer {
 
 #scroll {
   float: right;
-  background: #092591;
+  background: #38a7de;
   border-radius: 50%;
   width: 35px;
   height: 35px;
@@ -2586,7 +2590,7 @@ footer {
 }
 #scroll i {
   padding: 11px 0;
-  color: #000;
+  color: #fff;
   font-size: 12px;
 }
 
@@ -4604,6 +4608,81 @@ SERVICE DETAIL
 /*******************Css Personalizado*******************/
 
 /*****Generales*****/
+/*
+.appointment-style{
+  border: 3px solid #00a9e1;
+  padding: 30px;
+  background: url(/MaxPromed/images/banner-bg.jpg);
+  background-attachment: fixed;
+  border-radius: 40px;
+  background-position: center;
+  background-repeat: no-repeat;
+}*/
+
+
+.services-2-btn{
+
+  position: absolute;
+  top: 88%;
+  width: 80%;
+  left: 11%;
+
+}
+
+.copyright  a{
+
+ 
+  color: #00a9e1;
+}
+
+.copyright  a:hover{
+  color: #fff;
+}
+
+.foot-link-box li a {
+  font-size: 19px !important;
+  line-height: 39px !important;
+}
+
+.foot-link-box h4 {
+ font-size: 30px;
+}
+
+
+.appointment-style{
+  padding: 30px;
+  background: #ffffffe0;
+  background-attachment: fixed;
+  border-radius: 40px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+
+.row-appointment-background{
+  background: linear-gradient(#ffffff1a, #f1f1f133), url(/maxpromed/images/covid-test-location.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+ 
+
+
+
+.appointment-style button, .appointment-style input, .appointment-style optgroup, .appointment-style select, .appointment-style textarea {
+  margin: 0;
+  font-family: inherit;
+  color: #000 !important;
+  font-size: inherit;
+  line-height: inherit;
+  border: 2px solid #00a9e1 !important;
+  background: #c5f0ff !important;
+  border-radius: 20px !important;
+}
+
 
 .sombra-1{
   box-shadow: 0px 0px 24px #6a6666;
@@ -4980,7 +5059,7 @@ background: #38a7de !important;
 
 /******* altura de los servicios*****/
 
-
+/*
 .margin-services-1{
   margin-bottom: 79px !important;
 }
@@ -4995,8 +5074,22 @@ background: #38a7de !important;
 }
 .margin-services-5{
   margin-bottom: 55px !important;
+}*/
+
+.btn-services-style{
+  position: absolute;
+  top: 88%;
+  width: 80%;
+  left: 11%;
 }
 
+.btn-services-style2{
+  position: absolute;
+  top: 80%;
+  width: 80%;
+  left: 11%;
+}
+/*
 
 .principal-service-margin-1{
   margin-bottom: 262px !important;
@@ -5031,7 +5124,7 @@ background: #38a7de !important;
   margin-bottom: 30px !important;
 }
 
-
+*/
 
 /*********accordiones estilo*****/
 
@@ -5058,6 +5151,13 @@ background: #38a7de !important;
  
     border: 0 !important;
    
+ 
+}
+
+.appointment-style .card {
+ 
+  background: transparent !important;
+ 
  
 }
 
@@ -5092,6 +5192,7 @@ background: #38a7de !important;
 }
 
 
+
 .pricing-bg::before {
 
   height: auto !important;
@@ -5109,7 +5210,7 @@ background: #38a7de !important;
     height: auto !important;
   }
 
- 
+ /*
   .margin-services-1{
     margin-bottom: 0px !important;
   }
@@ -5124,14 +5225,10 @@ background: #38a7de !important;
   }
   .margin-services-5 {
     margin-bottom: 0px !important;
-}
+}*/
 
   
-  .service-block.blue {
-    border-radius: 50px !important;
-    height: auto !important;
-  }
-
+ 
   .visible-xs{
     display: block !important;
   }
@@ -5209,12 +5306,15 @@ padding-top: 0em;
 /********** ipad*********/
   @media   (min-width: 768px) and (max-width: 1250px) {
 
+
+
+
     .service-block.blue {
       border-radius: 50px !important;
-      height: 880px !important;
+      height: 820px !important;
     }
   
-
+/*
     .margin-services-1{
       margin-bottom: 110px !important;
     }
@@ -5229,7 +5329,7 @@ padding-top: 0em;
     }
     .margin-services-5 {
       margin-bottom: 82px !important;
-  }
+  }*/
 
     .visible-xs{
       display: block !important;
@@ -5247,6 +5347,43 @@ padding-top: 0em;
       vertical-align: top;
       margin: 0 0 0 0px;
     }
+
+    /*
+
+    .principal-service-margin-1{
+      margin-bottom: 262px !important;
+    }
+    
+    .principal-service-margin-2{
+      margin-bottom: 60px !important;
+    }
+    
+    
+    .principal-service-margin-3{
+      margin-bottom: 220px !important;
+    }
+    
+    .principal-service-margin-4{
+      margin-bottom: 180px !important;
+    }
+    
+    .principal-service-margin-5{
+      margin-bottom: 222px !important;
+    }
+    
+    .principal-service-margin-6{
+      margin-bottom: 120px !important;
+    }
+    
+    .principal-service-margin-7{
+      margin-bottom: 210px !important;
+    }
+    
+    .principal-service-margin-8{
+      margin-bottom: 100px !important;
+    }
+    
+    */
   
   
   }
@@ -5273,7 +5410,7 @@ padding-top: 0em;
 
 
   @media (min-width: 777px) and (max-width:787px) {
-
+/*
 
     .margin-services-1{
       margin-bottom: 79px !important;
@@ -5289,20 +5426,30 @@ padding-top: 0em;
     }
     .margin-services-5 {
       margin-bottom: 82px !important;
-  }
+  }*/
   }
  
-  @media (max-width:575px) {
+  @media  (max-width:399px){
+    .testimonial-wrap3 {
+      position: relative;
+      /*border: 1px solid #38a7de !important;*/
+      padding: 15px;   
+      height: 800px;
+      background-color: #fff !important;
+    }
+  
+  }
+  @media (min-width: 400px) and (max-width:464px) {
 
 
   .testimonial-wrap3 {
     position: relative;
     /*border: 1px solid #38a7de !important;*/
     padding: 15px;   
-    height: auto;
+    height: 730px;
     background-color: #fff !important;
   }
-
+/*
   .principal-service-margin-1{
     margin-bottom:0px !important;
   }
@@ -5334,20 +5481,33 @@ padding-top: 0em;
   
   .principal-service-margin-8{
     margin-bottom: 0px !important;
-  }
+  }*/
   }
 
-  @media (min-width: 576px) and (max-width:767px) {
+  @media (min-width: 465px) and (max-width:575px) {
 
     .testimonial-wrap3 {
       position: relative;
       /*border: 1px solid #38a7de !important;*/
       padding: 15px;
      
-      height: auto;
+      height: 700px;
       background-color: #fff !important;
     }
-  
+  }
+
+
+  @media (min-width: 576px) and (max-width:656px) {
+
+    .testimonial-wrap3 {
+      position: relative;
+      /*border: 1px solid #38a7de !important;*/
+      padding: 15px;
+     
+      height: 950px;
+      background-color: #fff !important;
+    }
+  /*
 
     .principal-service-margin-1{
       margin-bottom: 0px !important;
@@ -5380,6 +5540,78 @@ padding-top: 0em;
     
     .principal-service-margin-8{
       margin-bottom: 0px !important;
+    }*/
+
+  } 
+
+
+  @media (min-width: 657px) and (max-width:767px){
+    .testimonial-wrap3 {
+      position: relative;
+      /*border: 1px solid #38a7de !important;*/
+      padding: 15px;
+     
+      height: 820px;
+      background-color: #fff !important;
     }
 
   }
+
+
+  @media (min-width: 768px) and (max-width:900px){
+    .testimonial-wrap3 {
+      position: relative;
+      /*border: 1px solid #38a7de !important;*/
+      padding: 15px;
+     
+      height: 750px;
+      background-color: #fff !important;
+    }
+
+  }
+
+
+  
+  @media (min-width: 901px) and (max-width:1250px){
+    .testimonial-wrap3 {
+      position: relative;
+      /*border: 1px solid #38a7de !important;*/
+      padding: 15px;
+     
+      height: 700px;
+      background-color: #fff !important;
+    }
+
+  }
+
+
+  @media (min-width: 701px) and (max-width:1250px){
+    .service-block.blue {
+      border-radius: 50px !important;
+      height: 820px !important;
+    }
+  }
+
+  @media  (max-width:700px){
+    .service-block.blue {
+      border-radius: 50px !important;
+      height: 910px !important;
+    }
+  }
+
+
+
+  @media (min-width: 363px) and  (max-width:575px){
+    .service-block.blue {
+      border-radius: 50px !important;
+      height: 810px !important;
+    }
+  }
+
+  @media    (max-width:362px){
+    .service-block.blue {
+      border-radius: 50px !important;
+      height: 900px !important;
+    }
+  }
+
